@@ -1,0 +1,49 @@
+include ../../common/btn-link/btn-link
+
+-
+	var items = [
+		{
+			name: "Best <br> Winter <br> Destinations",
+			num: "34"
+		},
+		{
+			name: "The world's most extraordinary <br> places",
+			num: "29"
+			},
+		{
+			name: "New <br> destinations <br> for 2028",
+			num: "47"
+			},
+		{
+			name: "Your health <br> is matter", 
+			num: "39"
+		},
+		{
+			name: "Experiences <br> Away From <br> Crowd",
+			num: "169"
+		},
+	]
+
+section.packages#packages
+	.container 
+		.packages__content 
+			.packages__title--mobile 
+				+title("Luxury Packages")
+				+btn-link("#", "View All")
+			.swiper-packages
+				.swiper-wrapper.packages__wrapper 
+					.packages__title 
+						+title("Luxury Packages")
+						+btn-link("#", "View All")
+					each item, index in items
+						.packages__item.swiper-slide
+							+img(`packages/img-${index + 1}`, "packages__img", 350, 570, "Nature picture", "lazy")
+							span.packages__name!= item.name
+							.packages__rhomb-box
+								.packages__rhomb
+								.packages__info 
+									.packages__block
+										input.packages__nums(class=`packages__nums-${index + 1}` tabindex="-1" readonly type="number" value=`${item.num}`)
+									span.packages__text places
+									+svg("common--arrow-right", "packages__icon", 22, 12)
+				.packages__pagination.swiper-pagination-packages

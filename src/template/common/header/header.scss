@@ -1,0 +1,118 @@
+.header {
+	position: absolute;
+	z-index: 1200;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	width: 100%;
+	padding-top: 24px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		max-width: 1380px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	&__logo {
+		width: 121px;
+		height: 63px;
+	}
+
+	&__nav-bg {
+		position: absolute;
+		z-index: 10;
+		left: 50%;
+		transform: translate(-50%, -90%);
+
+		display: none;
+	}
+
+	&__list {
+		position: relative;
+		z-index: 100;
+
+		display: flex;
+		gap: 40px;
+		gap: clamp-px(17, 40, 1024, 1200);
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+			@include bg-svg("decor");
+
+			content: "";
+
+			position: absolute;
+			top: -17px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			width: 30px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+		}
+
+		&::before {
+			@include bg-svg("decor");
+
+			content: "";
+
+			position: absolute;
+			bottom: -16px;
+			left: 50%;
+			transform: translateX(-50%) rotate(180deg);
+
+			width: 30px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+		}
+
+		@media (any-hover: hover) {
+			&:hover::before,
+			&:hover::after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__nav-link {
+		position: relative;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: 0.64px;
+	}
+
+	&__burger {
+		position: relative;
+		display: none;
+	}
+}

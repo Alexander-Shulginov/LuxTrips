@@ -1,0 +1,25 @@
+include ../../common/btn-decor/btn-decor
+include ../../common/rhomb/rhomb
+
+section.hero
+	.hero__wrapper
+		span.hero__text the world’s most
+		h1.hero__title extra ordinary
+		.hero__subtitle places
+			.hero__rhomb.hero__rhomb--large
+				+rhomb('large')
+		.hero__rhomb.hero__rhomb--small-1
+			+rhomb('small')
+		.hero__rhomb.hero__rhomb--big
+			+rhomb('big')
+		.hero__rhomb.hero__rhomb--medium
+			+rhomb('medium')
+		.hero__rhomb.hero__rhomb--small
+			+rhomb('small')
+	picture 
+		source(media="(min-width: 1440px)", srcset="/img/hero/scale-bg-2.webp")
+		img.hero__img-1(src="/img/hero/bg-2.webp", width="1520", height="612", alt="Hero background image")
+	picture 
+		source(media="(min-width: 1440px)", srcset="/img/hero/scale-bg-3.webp")
+		img.hero__img-2(src="/img/hero/bg-3.webp", width="1520", height="612", alt="Hero background image")
+	include ../../common/find/find

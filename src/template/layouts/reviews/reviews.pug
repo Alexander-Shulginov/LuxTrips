@@ -1,0 +1,56 @@
+section.reviews 
+	+title("Customers reviews", "decor").reviews__title
+	.reviews__container
+		.reviews__slider.swiper-reviews
+			.swiper-wrapper
+				.swiper-slide.reviews__item 
+					.reviews__photo
+						+img("reviews/user-1", "reviews__img", 102, 102, "User photo", "lazy")
+					p.reviews__text.text-anim.slide-up
+						| “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”
+					span.reviews__name - Eduard Hand
+					address.reviews__location Müller-Egerer
+				.swiper-slide.reviews__item 
+					.reviews__photo
+						+img("reviews/user-2", "reviews__img", 102, 102, "User photo", "lazy")
+					//- .reviews__animation
+						<svg width="41" height="55" viewBox="0 0 41 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.05688 52.3491L3.95699 44.3359C3.97478 44.3324 4.93906 44.1473 5.93893 44.4747C5.9496 44.4783 5.95672 44.4818 5.96739 44.4854C6.36236 44.6206 6.76444 44.8341 7.10959 45.1757C7.4832 45.5422 7.79277 46.0546 7.97068 46.7662L2.05688 52.3491Z" fill="white"/>
+							<path d="M7.10963 45.1793C6.76448 44.8377 6.3624 44.6206 5.96744 44.489C5.95676 44.4854 5.94965 44.4819 5.93897 44.4783C4.93911 44.1509 3.97126 44.336 3.95703 44.3395L7.77858 28.21L8.52937 29.7934L12.4648 28.7366L13.4931 32.576L17.2826 31.5619L17.4285 31.5227L18.4711 35.4119L20.1755 35.1984L20.1008 35.3265L7.96717 46.7698C7.79282 46.0582 7.48325 45.5458 7.10963 45.1793Z" fill="white"/>
+							<path d="M18.4711 35.4119L17.4285 31.5227L17.2826 31.5619L17.2684 31.5121L34.2981 2H39.3295L20.179 35.1984L18.4711 35.4119ZM22.894 2L7.77856 28.2064L8.52935 29.7899L12.4648 28.7366L27.8862 2H22.894ZM27.8862 2L12.4648 28.7366L13.4931 32.576L17.2826 31.5619L17.2684 31.5121L34.2981 2H27.8862Z" fill="white"/>
+							<path d="M17.272 31.5121L34.2982 2" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M3.95699 44.336L7.77854 28.2064L22.8939 2H39.3295L20.179 35.1984L20.1043 35.3265L7.97068 46.7698L2.05688 52.3491" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M7.77856 28.2064L8.52935 29.7898L12.4648 28.7366" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M20.179 35.1984L18.471 35.4119L17.432 31.5227L17.2861 31.5618" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M17.286 31.5619L13.4929 32.576L12.4646 28.7366" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M12.4646 28.7366L27.886 2" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M7.97073 46.7698C7.79282 46.0582 7.47969 45.5458 7.10963 45.1793C6.76448 44.8377 6.3624 44.6206 5.96744 44.489C5.95676 44.4854 5.94965 44.4819 5.93897 44.4783C4.93911 44.1509 3.97126 44.336 3.95703 44.3395" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M2.05688 52.3491L3.95699 44.3359" stroke="#231F20" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						.reviews__dots 
+							.reviews__dot
+							.reviews__dot
+							.reviews__dot
+
+					p.reviews__text.text-anim.slide-up
+						| “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”
+					span.reviews__name - Nora Torres
+					address.reviews__location Davis Avenue
+
+				.swiper-slide.reviews__item 
+					.reviews__photo
+						+img("reviews/user-3", "reviews__img", 102, 102, "User photo", "lazy")
+					p.reviews__text.text-anim.slide-up
+						| “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”
+					span.reviews__name - Scott Labbe
+					address.reviews__location Inking
+
+				.swiper-slide.reviews__item 
+					.reviews__photo
+						+img("reviews/user-4", "reviews__img", 102, 102, "User photo", "lazy")
+					p.reviews__text.text-anim.slide-up
+						| “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team”
+					span.reviews__name - Bradley Thompson
+					address.reviews__location Charla Lane
+	.reviews__contacts 
+		include ../../common/contacts/contacts

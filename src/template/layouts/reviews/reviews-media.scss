@@ -1,0 +1,27 @@
+@media (min-width: 1441px) {
+	.reviews {
+		background-image: url(../img/reviews/reviews-bg2x.webp);
+		background-size: cover;
+	}
+}
+
+@media (max-width: 1024px) {
+	.reviews {
+		background-position-y: 65%;
+
+		&__container {
+			margin-bottom: 200px;
+		}
+
+		&__container::after {
+			content: none;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.reviews {
+		padding-bottom: 50px;
+		background-position-y: 58%;
+	}
+}

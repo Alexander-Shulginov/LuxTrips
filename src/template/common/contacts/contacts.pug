@@ -1,0 +1,7 @@
+section.contacts#contact
+	.contacts__inner 
+		+title("Contact").contacts__title
+		form.contacts__form(action="#") 
+			input.contacts__input(type="text", required, placeholder="Name")
+			input.contacts__input(type="text", required, placeholder="Phone")
+			+btn-decor("dark", "Call me back")

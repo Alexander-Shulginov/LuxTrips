@@ -1,0 +1,128 @@
+.why {
+	overflow: hidden;
+
+	padding-top: 100px;
+	padding-bottom: 115px;
+
+	background-image: url(../img/why/why-bg.webp);
+	background-repeat: no-repeat;
+	background-position-x: 55%;
+	background-position-y: -95px;
+	background-size: cover;
+
+	&__inner {
+		position: relative;
+	}
+
+	&__top-block {
+		display: flex;
+		gap: clamp-px(18, 55);
+
+		max-width: 538px;
+		margin: 0 auto;
+		margin-bottom: clamp-px(320, 456);
+	}
+
+	&__text {
+		max-width: 254px;
+
+		font-family: $second-font;
+		font-size: 16px;
+		line-height: $line-height-large;
+		color: $color-text;
+	}
+
+	&__subtitle {
+		font-family: $main-font;
+		font-size: clamp-px(26, 40);
+		line-height: $line-height-base;
+		color: $color-text;
+	}
+
+	&__subtitle--first {
+		font-size: 40px;
+	}
+
+	&__content {
+		display: grid;
+		// grid-template-columns: repeat(2, auto);
+		grid-template-columns: 270px 400px;
+		grid-template-rows: repeat(3, auto);
+		row-gap: 40px;
+		column-gap: 15px;
+
+		max-width: 530px;
+		margin: 0 auto;
+	}
+
+	&__picture {
+		transform: translateX(-65px);
+		grid-row: 2 span;
+	}
+
+	&__img {
+		border-radius: $radius-base;
+		box-shadow: 24px 42px 48px 5px rgba(33, 38, 41, 0.3);
+	}
+
+	&__subtitle--second {
+		align-self: flex-end;
+		// width: 370px;
+	}
+
+	&__link {
+		grid-column: 2;
+		width: 214px;
+		height: 38px;
+		text-align: center;
+	}
+
+	&__img-rhomb {
+		position: absolute;
+		right: 0;
+		bottom: -7%;
+		left: 0;
+
+		margin: 0 auto;
+
+		border: none;
+	}
+
+	&__img-rhomb--center {
+		position: absolute;
+		top: 20%;
+		left: 45%;
+
+		width: clamp-px(65, 155);
+		height: clamp-px(65, 155);
+
+		backdrop-filter: blur(4px);
+		border: none;
+	}
+
+	&__img-rhomb--second {
+		position: absolute;
+		top: 35%;
+		right: 0;
+		border: none;
+	}
+
+	&__decor-img {
+		position: absolute;
+	}
+
+	&__decor-img--1 {
+		top: 11%;
+		left: 5%;
+	}
+
+	&__decor-img--2 {
+		top: 16%;
+		left: 71%;
+	}
+
+	&__decor-img--3 {
+		top: 26%;
+		left: 86%;
+	}
+}

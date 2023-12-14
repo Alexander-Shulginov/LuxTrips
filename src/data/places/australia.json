@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Australia",
+		"place": "Sydney",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Australia",
+		"place": "Gold Coast",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Australia",
+		"place": "Great Barrier Reef",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "Australia",
+		"place": "Melbourne",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Australia",
+		"place": "Byron Bay",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Australia",
+		"place": "Cairns",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Australia",
+		"place": "Perth",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Australia",
+		"place": "Adelaide",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Australia",
+		"place": "Hamilton Island",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Australia",
+		"place": "Darwin",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Australia",
+		"place": "Hobart",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "Australia",
+		"place": "Fraser Island",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

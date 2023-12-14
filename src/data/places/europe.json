@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Italy",
+		"place": "Florence",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Spain",
+		"place": "Ibiza",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Italy",
+		"place": "Amalfi",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "France",
+		"place": "Paris",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Greece",
+		"place": "Santorini",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Portugal",
+		"place": "Algarve",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Croatia",
+		"place": "Dubrovnik",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Greece",
+		"place": "Mykonos",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Italy",
+		"place": "Cinque Terre",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Spain",
+		"place": "Costa del Sol",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Greece",
+		"place": "Rhodes",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "France",
+		"place": "Cannes",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

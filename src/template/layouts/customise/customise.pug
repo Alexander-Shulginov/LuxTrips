@@ -1,0 +1,75 @@
+section.customise#client
+	.customise__sky--left
+	.customise__sky--right
+	.container
+		+title("Customise <br> your trip with us").customise__title
+		.customise__inner 
+			.customise__item 
+				.customise__num 
+					.customise__value 1
+					.customise__rhomb
+						<svg class="customise__animation" width="115" height="786" viewBox="0 0 115 786" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="customise__animation customise__animation--1" d="M29.3087 54.9832L29.3094 54.9817L57.5018 1.07547L85.9234 54.9817L85.9241 54.9832L114.436 109.5L57.4998 217.925C51.4845 206.481 45.9917 196.045 40.7082 186.007C27.6277 161.155 15.8304 138.742 0.564638 109.501L29.3087 54.9832Z" stroke="white"/>
+							<path class="customise__animation customise__animation--3" d="M29.3087 336.983L29.3094 336.981L57.5018 283.075L85.9234 336.981L85.9241 336.983L114.436 391.499L57.4998 499.924C51.4845 488.48 45.9917 478.044 40.7082 468.006C27.6277 443.155 15.8304 420.741 0.564638 391.501L29.3087 336.983Z" stroke="white"/>
+							<path class="customise__animation customise__animation--5" d="M29.3087 621.983L29.3094 621.981L57.5018 568.075L85.9234 621.981L85.9241 621.983L114.436 676.499L57.4998 784.924C51.4845 773.48 45.9917 763.044 40.7082 753.006C27.6277 728.155 15.8304 705.741 0.564638 676.501L29.3087 621.983Z" stroke="white"/>
+							<line class="customise__animation customise__animation--2" x1="57.5" y1="217" x2="57.5" y2="284" stroke="white"/>
+							<line class="customise__animation customise__animation--4" x1="57.5" y1="498" x2="57.5" y2="569" stroke="white"/>
+						</svg>
+
+					//- +svg("customise--rhomb", "customise__rhomb")
+					//- <svg class="customise__rhomb" width="105" height="198" viewBox="0 0 105 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+					//- 	<g class="customise__animation">
+					//- 		<path d="M52.4036 1.23315L0.999955 98.9269" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M52.5596 1L103.865 98.5068" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- 	<g class="customise__animation customise__animation--2">
+					//- 	<path d="M1.32141 99.3577L53.2435 196.681" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M104.011 98.7544L53.5749 196.808" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- </svg>
+
+				.customise__content 
+					h3.customise__subtitle Describe your <br> dream trip
+					p.customise__descr 
+						| Let us know what your perfect vacation is. Destinations, preferences, and personal interests. 
+			.customise__item 
+				.customise__num.customise__rhomb--mid
+					.customise__value 2
+					//- +svg("customise--rhomb", "customise__rhomb ")
+					//- <svg class="customise__rhomb" width="105" height="198" viewBox="0 0 105 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+					//- 	<g class="customise__animation customise__animation--3">
+					//- 		<path d="M52.4036 1.23315L0.999955 98.9269" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M52.5596 1L103.865 98.5068" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- 	<g class="customise__animation customise__animation--4">
+					//- 	<path d="M1.32141 99.3577L53.2435 196.681" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M104.011 98.7544L53.5749 196.808" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- </svg>
+				.customise__content 
+					h3.customise__subtitle Get matched
+					p.customise__descr 
+						| Our team will create perfect travel itinerary for you, based on your personalized needs and wishes.
+			.customise__item 
+				.customise__num 
+					.customise__value 3
+					//- +svg("customise--rhomb", "customise__rhomb")
+					//- <svg class="customise__rhomb" width="105" height="198" viewBox="0 0 105 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+					//- 	<g class="customise__animation customise__animation--5">
+					//- 		<path d="M52.4036 1.23315L0.999955 98.9269" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M52.5596 1L103.865 98.5068" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- 	<g class="customise__animation customise__animation--6">
+					//- 	<path d="M1.32141 99.3577L53.2435 196.681" stroke="white" stroke-linecap="round"/>
+					//- 		<path d="M104.011 98.7544L53.5749 196.808" stroke="white" stroke-linecap="round"/>
+					//- 	</g>
+					//- </svg>
+
+				.customise__content 
+					h3.customise__subtitle Book your <br> vacation
+					p.customise__descr 
+						| Confirm your trip only when you are completely satisfied with the proposed travel plan. 
+		+btn-decor("dark", "Start a trip request").customise__btn
+		span.customise__notes It’s Free! - no credit card required
+		.customise__form
+			include ../../common/subscribe/subscribe

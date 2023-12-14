@@ -1,0 +1,33 @@
+-
+	var links = {
+			"/": "Home",
+			"packages": "Luxury packages",
+			"book": "Book with us",
+			"why": "Why Lux Trips",
+			"contact": "Contact",
+			"client": "Client area"
+		}
+	
+header.header 
+	.header__container
+		a.header__logo-link(href="/", aria-label="Logo") 
+			.header__logo
+				include ../logo/logo
+		nav.header__nav 
+			ul.header__list 
+				each link, key in links
+					if link === "Home"
+						li.header__item 
+							a.header__nav-link(href=`${key}`)= link
+					else 
+						li.header__item 
+							a.header__nav-link(href=`#${key}`)= link
+			.header__nav-bg(aria-hidden="true")
+				<svg class="header__nav-icon" width="309" height="599" viewBox="0 0 309 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M78.0067 149.98L78.0074 149.978L154.502 1.09062L231.618 149.978L231.619 149.98L308.438 299.5L154.5 597.91C138.046 566.043 123.052 537.045 108.638 509.169C73.4309 441.079 41.683 379.68 0.562504 299.501L78.0067 149.98Z" stroke="white"/>
+				</svg>
+
+		.header__btn-call
+			include ../btn-call/btn-call
+		.header__burger 
+			include ../btn-burger/btn-burger

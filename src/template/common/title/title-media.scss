@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+	.section-title--decor {
+		&::after {
+			width: 106px;
+			height: 162px;
+		}
+	}
+}

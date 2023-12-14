@@ -1,0 +1,38 @@
+-
+	var items = [
+		{
+			text: "Supercars",
+			img: "book/cars",
+		},
+		{
+			text: "Villas",
+			img: "book/villas",
+		},
+		{
+			text: "Private Helicopter",
+			img: "book/copter",
+		},
+		{
+			text: "Hotels",
+			img: "book/hotel",
+		},
+		{
+			text: "Yachts",
+			img: "book/yachts",
+		},
+		{
+			text: "Private jet",
+			img: "book/jet",
+		},
+	]
+section.book.parallax#book
+	.container 
+		.book__title
+			+title("Book with us", "decor")
+		.book__content
+			each item in items
+				.book__item.js-tilt
+					+img(`${item.img}`, "book__img", 540, 190, `${item.text}`, "lazy")
+					.book__rhomb-box
+						.book__rhomb
+						span.book__text= item.text

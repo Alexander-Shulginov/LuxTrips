@@ -1,0 +1,177 @@
+.customise {
+	position: relative;
+
+	padding-bottom: 100px;
+
+	background-image: url(../img/customise/customise-bg2x.webp);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-size: contain;
+	&__sky--left {
+		position: absolute;
+		z-index: -1;
+		top: -10%;
+		left: 0;
+
+		width: 100%;
+		height: 518px;
+
+		background-image: url(../img/customise/sky-2.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&__sky--right {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+
+		width: 660px;
+		height: 1260px;
+
+		background-image: url(../img/customise/sky-1.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	&__title {
+		max-width: 405px;
+		margin: 0 auto;
+		margin-bottom: 66px;
+		text-align: center;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 75px;
+
+		max-width: 535px;
+		margin: 0 auto;
+		margin-bottom: 32px;
+	}
+
+	&__num {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 210px;
+		height: 210px;
+	}
+
+	&__item {
+		display: flex;
+		gap: 78px;
+		align-items: center;
+	}
+
+	&__value {
+		// position: absolute;
+		// left: 50%;
+		// transform: translate(-50%, 0%);
+
+		// margin-left: 28px;
+
+		font-family: $main-font;
+		font-size: clamp-px(52, 73);
+		color: $color-text;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	&__subtitle {
+		font-family: $main-font;
+		font-size: clamp-px(28, 36);
+		font-weight: 400;
+		line-height: $line-height-base;
+		color: $color-text;
+	}
+
+	&__descr {
+		font-family: $second-font;
+		font-size: clamp-px(14, 16);
+		line-height: 1.9;
+		color: $color-text;
+	}
+
+	&__btn {
+		max-width: 540px;
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+
+	&__notes {
+		display: block;
+
+		margin-bottom: 158px;
+
+		font-family: $second-font;
+		font-size: 16px;
+		color: $color-text;
+		text-align: center;
+	}
+
+	&__rhomb {
+		position: absolute;
+
+		width: 110px;
+		height: 210px;
+
+		background-color: transparent;
+		backdrop-filter: unset;
+	}
+
+	&__rhomb--mid {
+		position: relative;
+	}
+
+	&__form {
+		margin-bottom: -413px;
+	}
+
+	&__animation {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: animation 5s linear forwards;
+		animation-play-state: paused;
+	}
+
+	&__animation--1 {
+		animation-delay: 0.9s;
+	}
+
+	&__animation--2 {
+		animation-delay: 1.8s;
+	}
+
+	&__animation--3 {
+		animation-delay: 2.7s;
+	}
+
+	&__animation--4 {
+		animation-delay: 3.6s;
+	}
+
+	&__animation--5 {
+		animation-delay: 4.5s;
+	}
+
+	&__animation--start {
+		animation-play-state: running;
+	}
+}
+
+@keyframes animation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}

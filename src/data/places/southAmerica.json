@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Brazil",
+		"place": "Rio de Janeiro",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Argentina",
+		"place": "Buenos Aires",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Chile",
+		"place": "Valparaíso",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "Peru",
+		"place": "Machu Picchu",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Brazil",
+		"place": "Fernando de Noronha",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Ecuador",
+		"place": "Galapagos Islands",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Colombia",
+		"place": "Cartagena",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Argentina",
+		"place": "Bariloche",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Brazil",
+		"place": "Jericoacoara",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Peru",
+		"place": "Cusco",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Chile",
+		"place": "Torres del Paine",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "Brazil",
+		"place": "Buzios",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

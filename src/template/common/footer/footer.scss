@@ -1,0 +1,153 @@
+.footer {
+	position: relative;
+
+	padding-bottom: 35px;
+
+	background-image: url(../img/footer/footer-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&::after {
+		content: "";
+
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		height: 350px;
+
+		background: linear-gradient(
+			0deg,
+			rgba(226, 211, 206, 0) 0%,
+			rgba(226, 211, 206, 0.71) 42.71%,
+			#e2d3ce 100%
+		);
+	}
+
+	&__logo {
+		display: block;
+		width: clamp-px(178, 214);
+		margin: 0 auto;
+		margin-bottom: clamp-px(27, 100);
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 10;
+
+		max-width: 775px;
+		margin: 0 auto;
+		margin-bottom: 125px;
+	}
+
+	&__list {
+		transform: translateX(-32px);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+			@include bg-svg("decor");
+
+			content: "";
+
+			position: absolute;
+			top: -17px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			width: 30px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+		}
+
+		&::before {
+			@include bg-svg("decor");
+
+			content: "";
+
+			position: absolute;
+			bottom: -16px;
+			left: 50%;
+			transform: translateX(-50%) rotate(180deg);
+
+			width: 30px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+		}
+
+		@media (any-hover: hover) {
+			&:hover::before,
+			&:hover::after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__item--decor {
+		cursor: pointer;
+
+		padding: 22px 28px;
+
+		background-image: url(../icons/sprite.svg#border);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		&::after,
+		&::before {
+			content: none;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				.footer__link--decor {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
+	&__link--decor {
+		display: block;
+		transition: transform 1s ease-in-out;
+	}
+
+	&__link {
+		font-family: $main-font;
+		font-size: 16px;
+		color: $color-text;
+		text-transform: uppercase;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		font-family: $second-font;
+		font-size: 12px;
+		color: $color-light;
+	}
+}

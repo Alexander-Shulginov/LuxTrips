@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Tanzania",
+		"place": "Zanzibar",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Mozambique",
+		"place": "Mozambique",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Egypt",
+		"place": "Sharm El Sheikh",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "South Africa",
+		"place": "Cape Town",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Mauritius",
+		"place": "Mauritius",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Seychelles",
+		"place": "Seychelles Islands",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Egypt",
+		"place": "Hurghada",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Tunisia",
+		"place": "Djerba",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Seychelles",
+		"place": "Victoria",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Nigeria",
+		"place": "Lagos, Nigeria",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Comoros",
+		"place": "Ladua",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "Angola",
+		"place": "Conturga",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

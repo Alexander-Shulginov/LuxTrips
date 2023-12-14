@@ -1,0 +1,36 @@
+.btn-link {
+	flex-shrink: 0;
+
+	padding: 10px clamp-px(18, 28);
+
+	font-family: $main-font;
+	color: $color-dark;
+	text-transform: uppercase;
+	letter-spacing: $letter-space-small;
+
+	border: 1px solid $color-dark;
+	border-radius: $radius-large;
+
+	&__text {
+		display: block;
+		transition: transform 1s ease-in-out;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			.btn-link__text {
+				transform: scale(1.2);
+			}
+		}
+	}
+}
+
+.btn-link--light {
+	color: $color-light;
+	border-color: $color-light;
+}
+
+.btn-link--fill {
+	color: $color-dark;
+	background-color: $color-light;
+}

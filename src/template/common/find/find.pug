@@ -1,0 +1,69 @@
+.find  
+	form.find__form(action='#')
+		.find__block
+			+svg("find--dest", "find__icon", 9, 17)
+			.select
+				label.select__label(id="custom-select") Destination
+				.select__choice(role="combobox", 
+					aria-labelledby="custom-select",
+					aria-controls="select-list", 
+					aria-expanded="false",
+					aria-haspopup="listbox", 
+					aria-activedescendant, 
+					aria-autocomplete="none",
+					tabindex="0") Where are you going?
+				.select__list(id="select-list", role="listbox", tabindex="-1")
+					.select__item(id="Africa", role="option", aria-selected="true") Africa 
+					.select__item(id="Asia", role="option", aria-selected="false") Asia
+					.select__item(id="Europe", role="option", aria-selected="false") Europe
+					.select__item(id="North-America", role="option", aria-selected="false") North America
+					.select__item(id="South-America", role="option", aria-selected="false") South America
+					.select__item(id="Russia", role="option", aria-selected="false") Russia
+					.select__item(id="Australia", role="option", aria-selected="false") Australia
+		.find__block
+			+svg("find--travel", "find__icon", 16, 16)
+			.select
+				label.select__label(id="custom-select-destination") Travel type
+				.select__choice(role="combobox", 
+					aria-labelledby="custom-select-destination",
+					aria-controls="select-destination", 
+					aria-expanded="false",
+					aria-haspopup="listbox", 
+					aria-activedescendant, 
+					aria-autocomplete="none",
+					tabindex="0") Adventure Travel
+				.select__list(id="select-destination", role="listbox", tabindex="-1")
+					.select__item(id="Romantic-evening", role="option", aria-selected="true") Romantic evening
+					.select__item(id="Beach-vacation", role="option", aria-selected="false") Beach vacation
+					.select__item(id="Mountain-walk", role="option", aria-selected="false") Mountain walk
+					.select__item(id="Winter-extreme", role="option", aria-selected="false") Winter extreme
+					.select__item(id="Underwater-world", role="option", aria-selected="false") Underwater world
+					.select__item(id="Hot-safari", role="option", aria-selected="false") Hot safari
+		.find__block
+			+svg("find--calendar", "find__icon", 16, 16)
+			.find__item 
+				label.find__label(for="calendar") When
+				input.find__input(type="date", id="calendar", name="user-destination", value="2024-12-24")
+		.find__block
+			+svg("find--user", "find__icon", 16, 16)
+			.select
+				label.select__label(id="custom-select-person") Travellers
+				.select__choice.select__choice--small(role="combobox", 
+					aria-labelledby="custom-select-person",
+					aria-controls="select-person", 
+					aria-expanded="false",
+					aria-haspopup="listbox", 
+					aria-activedescendant, 
+					aria-autocomplete="none",
+					tabindex="0") 2 person
+				.select__list(id="select-person", role="listbox", tabindex="-1")
+					.select__item(id="1-person", role="option", aria-selected="false") 1 person
+					.select__item.select__item--active(id="2-person", role="option", aria-selected="true") 2 person
+					.select__item(id="3-person", role="option", aria-selected="false") 3 person
+					.select__item(id="4-person", role="option", aria-selected="false") 4 and more 
+		button.find__button(type="button") 
+			span.find__button-content 
+				+svg('search', 'find__button-icon', 20, 20)
+				span.find__button-text Find
+	.find__decor-elem
+		+btn-decor("none", "Find your journey")

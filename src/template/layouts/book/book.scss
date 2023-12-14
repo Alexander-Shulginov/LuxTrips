@@ -1,0 +1,85 @@
+.book {
+	&__title {
+		position: relative;
+		z-index: 100;
+
+		width: 180px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+		padding-top: 45px;
+
+		text-align: center;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: $offset-base;
+
+		height: 633px;
+	}
+
+	&__item {
+		position: relative;
+
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		height: 190px;
+
+		border-radius: $radius-base;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		object-fit: cover;
+		border-radius: $radius-base;
+	}
+
+	&__rhomb-box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__rhomb {
+		transform: rotate(154deg) skewX(35deg) scaleY(cos(35deg));
+
+		width: 80px;
+		height: 80px;
+
+		background-color: rgba(144, 144, 144, 0.14);
+		backdrop-filter: blur(10px);
+		outline: 1.8px solid $color-decor;
+		outline-offset: 6px;
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		font-family: $main-font;
+		font-size: 44px;
+		line-height: 0.9;
+		color: $color-light;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: $letter-space-large;
+	}
+}

@@ -1,0 +1,12 @@
+section.subscribe
+	.subscribe__decor-wrap
+		.subscribe__elem.subscribe__elem--left(aria-hidden="true")
+		+svg("decor-white", "subscribe__icon", 48, 20)
+		.subscribe__elem.subscribe__elem--right(aria-hidden="true")
+	.container
+		.subscribe__inner
+			h2.subscribe__title Get weekly inspiration and expert advice
+			span.subscribe__text Sign up for our Weekly Newsletter
+			form.subscribe__form(action="#", method="post") 
+				input.subscribe__input(type="email" placeholder="Email address")
+				+btn-decor("light", "Subscribe").subscribe__btn

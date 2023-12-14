@@ -1,0 +1,10 @@
+mixin title(text, decor)
+	if decor
+		h2.section-title()&attributes(attributes)!= text
+			<svg class="section-title--decor" width="112" height="212" viewBox="0 0 112 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M78.3131 148.937L78.3123 148.938L55.9952 191.387L33.4967 148.938L33.4959 148.937L10.8614 105.885L55.9972 20.3808C60.743 29.3622 65.0803 37.5594 69.2532 45.446C79.6419 65.08 89.0122 82.7892 101.132 105.883L78.3131 148.937Z" stroke="white"/>
+				<path d="M28.5547 53.1765L28.5555 53.1751L56.0014 1.06948L83.6703 53.1751L83.6711 53.1765L111.434 105.884L55.9994 210.699C50.1456 199.642 44.7998 189.557 39.6576 179.857C26.9195 155.828 15.4309 134.156 0.565561 105.885L28.5547 53.1765Z" stroke="white"/>
+			</svg>
+
+	else 
+		h2.section-title()&attributes(attributes)!= text

@@ -1,0 +1,185 @@
+include ../../common/title/title
+-
+	var items = [
+		"World",
+		"Asia",
+		"Africa",
+		"Europe",
+		"North America",
+		"South America",
+		"Russia",
+		"Australia",
+	]
+
+section.rated
+		.rated__title
+			+title("Top Rated Experiences", "decor")
+		.rated__wrap
+			.tabs.rated__tabs(id="custom-tabs-rated")
+				.tabs__nav(role='tablist', aria-labelledby="custom-tabs-rated")
+					each item, index in items
+						button.tabs__btn(
+							type='button', 
+							id=`tab-${index + 1}`,
+							role='tab',
+							aria-selected='true', 
+							aria-controls=`tabpanel-${index + 1}`)= item
+
+				.tabs__wrapper(aria-hidden='true') 
+					.tabs__content(id="tabpanel-1", role='tabpanel', aria-labelledby="tab-1")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in world
+									.swiper-slide.place
+										+img(`places/world/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-2", role='tabpanel', aria-labelledby="tab-2")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in asia
+									.swiper-slide.place 
+										+img(`places/asia/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-3", role='tabpanel', aria-labelledby="tab-3")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in africa
+									.swiper-slide.place
+										+img(`places/africa/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-4", role='tabpanel', aria-labelledby="tab-4")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in europe
+									.swiper-slide.place
+										+img(`places/europe/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-5", role='tabpanel', aria-labelledby="tab-5")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in northAmerica
+									.swiper-slide.place
+										+img(`places/northAmerica/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-6", role='tabpanel', aria-labelledby="tab-6")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in southAmerica
+									.swiper-slide.place
+										+img(`places/southAmerica/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-7", role='tabpanel', aria-labelledby="tab-7")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in russia
+									.swiper-slide.place
+										+img(`places/russia/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.tabs__content(id="tabpanel-8", role='tabpanel', aria-labelledby="tab-8")
+						.swiper.rated__container 
+							.swiper-wrapper 
+								each item in australia
+									.swiper-slide.place
+										+img(`places/australia/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+										.place__inner
+											.place__block
+												.place__location
+													address.place__country= item.country
+													h3.place__name= item.place
+												.place__wrap
+													.place__sum
+														span.place__price From
+														.place__value= item.price 
+											.place__block 
+												.place__rating
+													span.place__rating-num= item.rating
+													+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)
+					.swiper-button-next.place__nav.place__nav--right
+						+svg("common--arrow-right", "place__nav-icon", 28, 14)
+					.swiper-button-prev.place__nav.place__nav--left
+						+svg("common--arrow-right", "place__nav-icon", 28, 14)
+			.swiper-pagination.place__pagination

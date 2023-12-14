@@ -1,0 +1,53 @@
+@media (min-width: 1900px) {
+	.customise {
+		padding-top: 140px;
+		background-image: url(../img/customise/customise-bg3x.webp);
+		background-size: cover;
+		&::after {
+			top: -3%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.customise {
+		background-size: unset;
+		background-size: cover;
+	}
+}
+
+@media (max-width: 1024px) {
+	.customise {
+		background-image: url(../img/customise/customise-bg.webp);
+		background-size: unset;
+	}
+}
+
+@media (max-width: 768px) {
+	.customise {
+		background-position-x: 41%;
+		background-position-y: 102%;
+
+		&__sky--left {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.customise {
+		background-position-x: 34%;
+		background-position-y: 119%;
+		&__item {
+			gap: 28px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.customise {
+		&__content {
+			width: 435px;
+		}
+	}
+}

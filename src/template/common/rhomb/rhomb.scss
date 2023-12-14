@@ -1,0 +1,26 @@
+.rhomb {
+	transform: rotate(62deg) skewX(35deg) scaleY(cos(35deg));
+	background-color: rgba(232, 233, 237, 0.51);
+	backdrop-filter: blur(2px);
+	border: 1.8px solid #fff;
+
+	&--large {
+		width: clamp-px(60, 124, 320, 1024);
+		height: clamp-px(60, 124, 320, 1024);
+	}
+
+	&--big {
+		width: clamp-px(25, 50);
+		height: clamp-px(25, 50);
+	}
+
+	&--medium {
+		width: clamp-px(20, 40);
+		height: clamp-px(20, 40);
+	}
+
+	&--small {
+		width: clamp-px(15, 30);
+		height: clamp-px(15, 30);
+	}
+}

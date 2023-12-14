@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Russia",
+		"place": "Moscow",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Russia",
+		"place": "St. Petersburg",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Russia",
+		"place": "Sochi",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-3"
+	},
+	{
+		"country": "Russia",
+		"place": "Crimea",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Russia",
+		"place": "Baikal Lake",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Russia",
+		"place": "Kamchatka",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Russia",
+		"place": "Altai Mountains",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Russia",
+		"place": "Krasnodar",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Russia",
+		"place": "Ural",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Russia",
+		"place": "Golden Ring",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Russia",
+		"place": "Siberia",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "Russia",
+		"place": "Yakutsk",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

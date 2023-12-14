@@ -1,0 +1,17 @@
+each item in places
+	.place
+		+img(`places/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
+		.place__inner
+			.place__block
+				.place__location
+					address.place__country= item.country
+					h3.place__name= item.place
+				.place__wrap
+					.place__sum
+						span.place__price From
+						.place__value= item.price 
+					//- a.place__link(href="#") Customise 
+			.place__block 
+				.place__rating
+					span.place__rating-num= item.rating
+					+svg(`rating--rating-${item.rating}`, "place__icon", 10, 98)

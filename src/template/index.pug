@@ -1,0 +1,17 @@
+extends ../pug/default/_default
+
+block hero-content
+	include ./layouts/preloader/preloader
+	include ./common/header/header
+	include ./layouts/hero/hero
+
+block main-content
+	include ./layouts/rated/rated
+	include ./layouts/packages/packages
+	include ./layouts/book/book
+	include ./layouts/why/why
+	include ./layouts/customise/customise
+	include ./layouts/reviews/reviews
+
+block footer-content
+	include ./common/footer/footer

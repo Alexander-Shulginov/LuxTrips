@@ -1,0 +1,86 @@
+[
+	{
+		"country": "USA",
+		"place": "Aspen",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "USA",
+		"place": "Arizona",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "USA",
+		"place": "New York",
+		"price": "€ 1490",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "Canada",
+		"place": "Whistler",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Mexico",
+		"place": "Cancun",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "USA",
+		"place": "Maui",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Mexico",
+		"place": "Cabo San Lucas",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "USA",
+		"place": "Orlando",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "USA",
+		"place": "Lake Tahoe",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "USA",
+		"place": "Hawaii Island",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Canada",
+		"place": "Banff",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "USA",
+		"place": "Key West",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

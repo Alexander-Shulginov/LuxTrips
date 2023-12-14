@@ -1,0 +1,86 @@
+[
+	{
+		"country": "Austria",
+		"place": "Winter Park Ski Holiday",
+		"price": "€ 1490",
+		"rating": "5.0",
+		"img": "place-1"
+	},
+	{
+		"country": "Peru",
+		"place": "Machu Picchu",
+		"price": "€ 2300",
+		"rating": "5.0",
+		"img": "place-2"
+	},
+	{
+		"country": "Croatia",
+		"place": "Hvar",
+		"price": "€ 4500",
+		"rating": "4.0",
+		"img": "place-3"
+	},
+	{
+		"country": "Jordan",
+		"place": "Wadi Musa",
+		"price": "€ 3700",
+		"rating": "4.0",
+		"img": "place-4"
+	},
+	{
+		"country": "Canada",
+		"place": "Niagara Falls",
+		"price": "€ 5200",
+		"rating": "5.0",
+		"img": "place-5"
+	},
+	{
+		"country": "Russia",
+		"place": "Siberia",
+		"price": "€ 4500",
+		"rating": "5.0",
+		"img": "place-6"
+	},
+	{
+		"country": "Maldives",
+		"place": "Bars",
+		"price": "€ 9990",
+		"rating": "4.0",
+		"img": "place-7"
+	},
+	{
+		"country": "Kazakhstan",
+		"place": "Turgen Waterfalls",
+		"price": "€ 3200",
+		"rating": "5.0",
+		"img": "place-8"
+	},
+	{
+		"country": "Poland",
+		"place": "Wieszowa",
+		"price": "€ 2850",
+		"rating": "4.0",
+		"img": "place-9"
+	},
+	{
+		"country": "Spain",
+		"place": "Barcelona",
+		"price": "€ 5000",
+		"rating": "4.0",
+		"img": "place-10"
+	},
+	{
+		"country": "Nepal",
+		"place": "Everest",
+		"price": "€ 7700",
+		"rating": "5.0",
+		"img": "place-11"
+	},
+	{
+		"country": "USA",
+		"place": "Golden bridge",
+		"price": "€ 2000",
+		"rating": "4.0",
+		"img": "place-12"
+	}
+]

@@ -1,0 +1,241 @@
+.find {
+	position: relative;
+	z-index: 1100;
+	// bottom: -200px;
+	// left: 50%;
+	// transform: translate(-50%);
+
+	width: 100%;
+	max-width: 1110px;
+	height: 114px;
+	margin: 0 auto;
+	padding: 22px 28px;
+
+	background-color: $color-light;
+	border-radius: 10px;
+	box-shadow: 0px 18px 38px 0px rgba(0, 0, 0, 0.11);
+
+	&__decor-elem {
+		pointer-events: none;
+
+		position: absolute;
+		top: -76px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 330px;
+	}
+
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(5, auto);
+		align-items: center;
+	}
+
+	&__block {
+		display: flex;
+		gap: 8px;
+		// width: 260px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__label {
+		margin-bottom: 4px;
+
+		font-family: $second-font;
+		font-size: clamp-px(16, 18);
+		font-weight: 300;
+		color: $color-decor;
+		text-align: left;
+		text-transform: none;
+	}
+
+	&__input {
+		font-family: $second-font;
+		font-size: clamp-px(16, 18);
+		font-weight: 500;
+		color: $color-dark;
+
+		appearance: none;
+		background-color: transparent;
+		border-right: 2px solid transparent;
+		border-bottom: 2px solid transparent;
+
+		&[type="date"]::-webkit-calendar-picker-indicator {
+			display: none;
+		}
+	}
+
+	&__input--correct {
+		width: 79px;
+	}
+
+	&__button {
+		cursor: pointer;
+
+		position: relative;
+		z-index: 15;
+
+		overflow: hidden;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+
+		width: 100%;
+		padding: clamp-px(16, 23);
+
+		background-color: $color-dark;
+		border-radius: 121px;
+
+		&:active {
+			/* stylelint-disable-next-line scss/no-global-function-names */
+			background-color: lighten($color-dark, 13);
+		}
+
+		&:focus-visible {
+			outline-color: $color-dark;
+			outline-width: 5px;
+			outline-offset: 3px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				.find__button-icon {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
+	&__button-content {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__button-icon {
+		margin-top: 2px;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	&__button-text {
+		font-family: $main-font;
+		font-size: 24px;
+		color: $color-light;
+		text-transform: uppercase;
+		letter-spacing: $letter-space-base;
+	}
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+
+	&__label {
+		font-family: $second-font;
+		font-size: clamp-px(16, 18);
+		font-weight: 300;
+		color: $color-decor;
+		text-align: left;
+		text-transform: none;
+	}
+
+	&__choice {
+		cursor: pointer;
+
+		position: relative;
+		z-index: 10;
+
+		width: 200px;
+		padding: 6px 0px 6px 0;
+
+		font-family: $second-font;
+		font-size: clamp-px(16, 18);
+		font-weight: 500;
+		color: $color-dark;
+		&:focus-visible {
+			outline-color: $color-dark;
+			outline-offset: 2px;
+		}
+	}
+
+	&__choice--small {
+		width: 113px;
+	}
+
+	&__choice--active {
+		&::after {
+			transform: rotate(225deg);
+		}
+	}
+
+	&__list {
+		position: absolute;
+		z-index: 120;
+		left: 50%;
+		transform: translateX(-50%);
+
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+
+		width: 100%;
+		height: 0px;
+
+		background: rgba(226, 211, 206, 0.2);
+		backdrop-filter: blur(10px);
+		border-radius: 8px;
+		outline: 1px solid $color-border;
+		outline-offset: -1px;
+
+		transition: height 0.3s ease-in-out;
+	}
+
+	&__item {
+		width: 100%;
+		padding: 12px;
+
+		font-family: $second-font;
+		font-size: 16px;
+		font-weight: 300;
+		color: $color-text;
+		text-align: center;
+		text-transform: none;
+
+		background: linear-gradient(90deg, #000 50%, #fff 0),
+			linear-gradient(-90deg, #000 50%, #fff 0),
+			linear-gradient(90deg, #0000 50%, #000 0),
+			linear-gradient(-90deg, #0000 50%, #000 0);
+		background-repeat: no-repeat;
+		background-position: top left, bottom right;
+		-webkit-background-clip: text, text, padding-box, padding-box;
+		background-clip: text, text, padding-box, padding-box;
+		background-size: 200% 51%;
+
+		transition: 0.7s;
+
+		&:focus-visible {
+			color: $color-light;
+			background-position: top right, bottom left;
+			outline: none;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				cursor: pointer;
+				color: $color-light;
+				background-position: top right, bottom left;
+			}
+		}
+	}
+
+	&__item--active {
+		color: $color-light;
+		background-color: $color-text;
+	}
+}
