@@ -36,10 +36,10 @@ export default function parallaxInit() {
 	}
 
 	function onAnimationFrame() {
-		const positionX = (inputX * windowWidth) / 10;
-		const positionY = (inputY * windowHeight) / 10;
-		offsetX += (positionX - offsetX) * 0.1;
-		offsetY += (positionY - offsetY) * 0.1;
+		const positionX = (inputX * windowWidth) / 20;
+		const positionY = (inputY * windowHeight) / 20;
+		offsetX += (positionX - offsetX) * 0.05;
+		offsetY += (positionY - offsetY) * 0.05;
 
 		for (let index = 0; index < innerElems.length; index++) {
 			const layer = innerElems[index];

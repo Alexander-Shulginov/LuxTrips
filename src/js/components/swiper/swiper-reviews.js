@@ -1,9 +1,10 @@
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
-const swiper = new Swiper(".swiper-reviews", {
+const swiper = new Swiper('.swiper-reviews', {
 	modules: [Navigation, Pagination],
 	loop: true,
+	speed: 800,
 	spaceBetween: 16,
 	slidesPerView: 1,
 	breakpoints: {
@@ -14,11 +15,11 @@ const swiper = new Swiper(".swiper-reviews", {
 	},
 
 	pagination: {
-		el: ".swiper-pagination-reviews",
+		el: '.swiper-pagination-reviews',
 	},
 
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 });

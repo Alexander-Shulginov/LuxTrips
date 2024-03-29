@@ -6,6 +6,7 @@ new Swiper('.swiper-packages', {
 	loop: true,
 	slidesPerView: 3,
 	width: 1000,
+	speed: 800,
 	breakpoints: {
 		320: {
 			spaceBetween: 16,
@@ -13,11 +14,11 @@ new Swiper('.swiper-packages', {
 		},
 		768: {
 			spaceBetween: 20,
-			enabled: true
+			enabled: true,
 		},
 		1025: {
 			spaceBetween: 0,
-			enabled: false
+			enabled: false,
 		},
 	},
 
@@ -34,4 +35,4 @@ function resetSliderPosition() {
 	});
 }
 
-export { Swiper, resetSliderPosition }
+export { Swiper, resetSliderPosition };

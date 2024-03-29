@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 export default new Swiper('.swiper', {
 	modules: [Navigation, Pagination],
 	loop: true,
+	speed: 800,
 	spaceBetween: 16,
 	breakpoints: {
 		320: {
