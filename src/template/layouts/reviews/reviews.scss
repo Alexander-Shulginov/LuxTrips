@@ -9,6 +9,7 @@
 	background-position-x: center;
 	background-position-y: center;
 	background-size: contain;
+
 	&__title {
 		max-width: 250px;
 		margin: 0 auto;
@@ -46,8 +47,12 @@
 	}
 
 	&__item {
+		cursor: default;
+
 		position: relative;
 
+		height: 100%;
+		min-height: 600px;
 		margin: 24px 0;
 		padding-top: 61px;
 		padding-right: clamp-px(20, 66);
@@ -102,9 +107,12 @@
 
 	&__name {
 		display: block;
-		margin-bottom: 6px;
+
+		margin-top: 24px;
+
 		font-size: clamp-px(14, 20);
 		font-weight: 500;
+		line-height: 1;
 	}
 
 	&__location {
@@ -124,47 +132,79 @@
 		padding: 0 8px;
 	}
 
-	&__animation {
+	&__typed-wrap {
 		display: flex;
-		gap: 4px;
-		align-items: flex-end;
+		gap: 8px;
+		align-items: center;
 	}
 
-	&__dots {
+	&__typed {
 		display: flex;
-		gap: 3px;
-		margin-left: -30px;
+		gap: 5px;
+	}
+
+	&__typed-text {
+		font-size: clamp-px(18, 21);
+		font-weight: 300;
+		line-height: 1.76;
 	}
 
 	&__dot {
-		width: 5px;
-		height: 5px;
-		background-color: #000;
+		width: 13px;
+		height: 13px;
+
+		background-color: gray;
 		border-radius: 50%;
-		&:nth-child(1) {
-			animation: wave 1s infinite linear;
-		}
-		&:nth-child(2) {
-			animation: wave 1s infinite linear;
-			animation-delay: 1s;
-		}
-		&:nth-child(3) {
-			animation: wave 1s infinite linear;
-			animation-delay: 3s;
-		}
+
+		animation: opac 1s infinite;
+	}
+
+	&__dot:nth-child(1) {
+		background-color: #5c5c5b;
+	}
+
+	&__dot:nth-child(2) {
+		background-color: #babab8;
+		animation-delay: 0.3s;
+	}
+
+	&__dot:nth-child(3) {
+		background-color: #8c8c8b;
+		animation-delay: 0.6s;
+	}
+
+	&__hidden {
+		opacity: 0;
 	}
 }
 
-@keyframes wave {
+@keyframes opac {
 	0% {
-		transform: scale(0.4);
+		opacity: 65%;
+		background-color: #babab8;
 	}
+	5% {
+		opacity: 100%;
+		background-color: #5c5c5b;
+	}
+	20% {
+		opacity: 100%;
+		background-color: #5c5c5b;
+	}
+	40% {
+		opacity: 85%;
+		background-color: #8c8c8b;
+	}
+	100% {
+		opacity: 65%;
+		background-color: #babab8;
+	}
+}
 
-	50% {
-		transform: scale(1.1);
-	}
+.hidden {
+	display: none;
+}
 
-	to {
-		transform: scale(0.5);
-	}
+.show {
+	display: block;
 }

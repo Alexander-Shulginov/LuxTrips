@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import Typed from 'typed.js';
 import CustomTabs from './modules/tabs/tabs';
 import CustomSelect from './modules/select/select';
 import preloader from './components/preloader';
@@ -18,12 +19,21 @@ const tabs = document.querySelectorAll('.tabs');
 tabs.forEach((tab) => new CustomTabs(tab, 1, 'horizontal'));
 
 gsapInit();
-preloader();
+// preloader();
 flyingNavSlider();
 resetSliderPosition();
 burgerMenu();
 parallaxInit();
 
-window.setTimeout(() => {
-	smoothScroll();
-}, 2000);
+//! scroll disabled
+// window.setTimeout(() => {
+smoothScroll();
+// }, 2000);
+
+export function typeText(index) {
+	const typed = new Typed(`#typed-${index}`, {
+		stringsElement: `#typed-string-${index}`,
+		typeSpeed: 1,
+		showCursor: false,
+	});
+}

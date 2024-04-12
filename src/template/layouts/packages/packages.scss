@@ -133,6 +133,8 @@
 	}
 
 	&__rhomb-box {
+		cursor: pointer;
+
 		position: relative;
 		top: 32%;
 
@@ -144,6 +146,8 @@
 	}
 
 	&__rhomb {
+		cursor: pointer;
+
 		transform: rotate(62deg) skewX(35deg) scaleY(cos(35deg));
 
 		width: 125px;
@@ -156,6 +160,8 @@
 	}
 
 	&__info {
+		cursor: pointer;
+
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -170,9 +176,11 @@
 		color: $color-light;
 	}
 
-
 	&__nums {
+		cursor: pointer;
+
 		padding-left: 8px;
+
 		font-family: $main-font;
 		font-size: 35px;
 		line-height: 0.9;

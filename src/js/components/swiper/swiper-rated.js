@@ -56,7 +56,7 @@ export default new Swiper('.swiper', {
 		2800: {
 			slidesPerView: 7,
 		},
-		
+
 	},
 
 	pagination: {

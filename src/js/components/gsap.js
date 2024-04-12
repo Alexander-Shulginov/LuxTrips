@@ -4,6 +4,7 @@ import gsapCustomise from './gsap/gsap-customise';
 import gsapHero from './gsap/gsap-hero';
 import gsapPackages from './gsap/gsap-packages';
 import gsapRated from './gsap/gsap-rated';
+import gsapReviews from './gsap/gsap-reviews';
 import gsapWhy from './gsap/gsap-why';
 
 export default function gsapInit() {
@@ -14,4 +15,5 @@ export default function gsapInit() {
 	gsapWhy();
 	gsapCustomise();
 	gsapContact();
+	gsapReviews();
 }

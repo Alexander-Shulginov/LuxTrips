@@ -1,7 +1,19 @@
+/* eslint-disable no-unused-expressions */
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import { typeText } from '../../main';
 
-const swiper = new Swiper('.swiper-reviews', {
+const animElems = document.querySelectorAll('.reviews__typed-wrap');
+const textElems = document.querySelectorAll('.reviews__item');
+
+function hideTypeAnimation(num) {
+	if (animElems.length === 0) return;
+	animElems[num].classList.add('hidden');
+	if (textElems.length === 0) return;
+	textElems[num].classList.add('show');
+}
+
+const swiperReviews = new Swiper('.swiper-reviews', {
 	modules: [Navigation, Pagination],
 	loop: true,
 	speed: 800,
@@ -22,4 +34,13 @@ const swiper = new Swiper('.swiper-reviews', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+
+	on: {
+		slideChangeTransitionEnd: () => {
+			hideTypeAnimation(swiperReviews.realIndex);
+			typeText(swiperReviews.realIndex + 1);
+		},
+	},
 });
+
+export default swiperReviews;
