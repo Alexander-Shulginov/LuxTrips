@@ -1,7 +1,15 @@
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
 	.reviews {
 		background-image: url(../img/reviews/reviews-bg2x.webp);
 		background-size: cover;
+
+		&__container::after {
+			content: none;
+		}
+
+		&__item {
+			min-height: 510px;
+		}
 	}
 }
 
@@ -13,15 +21,23 @@
 			margin-bottom: 200px;
 		}
 
-		&__container::after {
-			content: none;
+		&__item {
+			min-height: 638px;
 		}
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.reviews {
 		padding-bottom: 50px;
 		background-position-y: 58%;
+		&__item {
+			height: 550px;
+			min-height: unset;
+		}
+
+		&__container::after {
+			content: none;
+		}
 	}
 }

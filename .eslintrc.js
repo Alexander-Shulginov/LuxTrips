@@ -23,6 +23,8 @@ module.exports = {
 		indent: ['error', 'tab'],
 		'no-tabs': 'off',
 		'import/no-extraneous-dependencies': 'off',
+		'import/no-cycle': 'off',
+		'import/prefer-default-export': 'off',
 	},
 	ignorePatterns: ['build/js/*.js', 'src/js/vendor/*.js'],
 };

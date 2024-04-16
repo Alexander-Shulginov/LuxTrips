@@ -1,5 +1,6 @@
 .subscribe {
 	position: relative;
+	z-index: 2;
 
 	max-width: 1111px;
 
@@ -11,18 +12,20 @@
 	&::after {
 		content: "";
 
-		position: relative;
-		z-index: -1;
+		position: absolute;
+		z-index: auto;
 		bottom: -18px;
-
-		display: block;
+		left: 50%;
+		transform: translateX(-50%);
 
 		width: 96%;
-		height: 29px;
-		margin: 0 auto;
+		height: 19px;
 
 		border: 1px solid $color-light;
+		border-top: none;
 		border-radius: $radius-base;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 	}
 
 	&__inner {
@@ -64,6 +67,7 @@
 		padding: 20px 450px 20px 30px;
 
 		font-family: $second-font;
+		font-size: 14px;
 		color: $color-text;
 
 		background: rgba(255, 255, 255, 0.14);
@@ -80,7 +84,7 @@
 
 	&__btn {
 		position: absolute;
-		top: -88%;
+		top: -84%;
 		right: 0;
 		max-width: 330px;
 	}

@@ -8,6 +8,22 @@
 	background-position-x: center;
 	background-position-y: bottom;
 	background-size: contain;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		right: 0;
+		bottom: -2px;
+		left: 0;
+
+		width: 100%;
+		height: 300px;
+
+		background-image: url(../img/reviews/gradient-bg.webp);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	&__sky--left {
 		position: absolute;
 		z-index: -1;

@@ -2,6 +2,10 @@
 	.subscribe {
 		background-position: 36% 100%;
 
+		&__title {
+			overflow: hidden;
+		}
+
 		&__btn {
 			position: static;
 			max-width: 100%;

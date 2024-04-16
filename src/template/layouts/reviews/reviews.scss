@@ -13,7 +13,7 @@
 	&__title {
 		max-width: 250px;
 		margin: 0 auto;
-		margin-bottom: clamp-px(60, 75);
+		margin-bottom: clamp-px(10, 75);
 		text-align: center;
 	}
 
@@ -22,8 +22,10 @@
 
 		overflow: hidden;
 
+		max-width: 1440px;
+		margin: 0 auto;
 		margin-bottom: 416px;
-		margin-left: clamp-px(0, 150, 1024, 1440);
+		// margin-left: clamp-px(0, 150, 1024, 1440);
 		padding: 0 15px;
 		&::after {
 			content: "";
