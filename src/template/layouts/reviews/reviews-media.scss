@@ -8,7 +8,15 @@
 		}
 
 		&__item {
-			min-height: 510px;
+			height: 540px;
+		}
+	}
+}
+
+@media (min-width: 1240px) {
+	.reviews {
+		&__item {
+			height: 555px;
 		}
 	}
 }
@@ -19,10 +27,14 @@
 
 		&__container {
 			margin-bottom: 200px;
+			&::after {
+				width: 220px;
+				height: 96%;
+			}
 		}
 
 		&__item {
-			min-height: 638px;
+			height: 540px;
 		}
 	}
 }

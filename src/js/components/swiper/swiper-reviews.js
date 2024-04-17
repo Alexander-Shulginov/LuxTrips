@@ -22,6 +22,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 	breakpoints: {
 		768: {
 			slidesPerView: 1.4,
+			spaceBetween: 44,
 		},
 		1024: {
 			spaceBetween: 94,

@@ -26,7 +26,7 @@ export default function gsapWhy() {
 			start: '-1%',
 		},
 		x: -150,
-		opacity: 0,
+		// opacity: 0,
 		duration: 0.8,
 		delay: 0.3,
 	});
