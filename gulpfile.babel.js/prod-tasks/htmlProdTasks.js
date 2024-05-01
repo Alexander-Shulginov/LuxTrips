@@ -23,7 +23,7 @@ export default async function htmlProdTasks(cb) {
 		.pipe(gulp.dest(paths.template.dest))
 		.on('end', () => {
 			exec('npm run validate', (error, stdout) => {
-				console.log(stdout); // eslint-disable-line no-console
+				console.log(stdout);
 				cb();
 			});
 		});

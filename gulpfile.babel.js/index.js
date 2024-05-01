@@ -13,6 +13,8 @@ import serverInit from './dev-tasks/serverInit';
 import createSprite from './dev-tasks/createSprite';
 import svgOptimize from './prod-tasks/svgOptimize';
 import htmlProdTasks from './prod-tasks/htmlProdTasks';
+import videoCopy from './dev-tasks/videoCopy';
+import audioCopy from './dev-tasks/audioCopy';
 
 const watcher = () => {
 	gulp.watch(paths.font.watch, fontCopy);
@@ -22,6 +24,8 @@ const watcher = () => {
 	gulp.watch(paths.template.watch, pugCompile);
 	gulp.watch(paths.scss.watch, scssCompile);
 	gulp.watch(paths.sprite.watch, createSprite);
+	gulp.watch(paths.video.watch, videoCopy);
+	gulp.watch(paths.audio.watch, videoCopy);
 };
 
 const developmentTasks = [
@@ -32,6 +36,8 @@ const developmentTasks = [
 	iconCopy,
 	imgOptimize,
 	createSprite,
+	videoCopy,
+	audioCopy,
 ];
 
 const preProductionTasks = [
@@ -65,3 +71,5 @@ export { svgOptimize };
 export { htmlProdTasks };
 export { watcher };
 export { serverInit };
+export { videoCopy };
+export { audioCopy };

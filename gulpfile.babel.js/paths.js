@@ -28,10 +28,22 @@ const paths = {
 		dest: `${pathBuild}/img`,
 	},
 
+	video: {
+		src: `${pathSrc}/video/**/*`,
+		watch: `${pathSrc}/video/**/*`,
+		dest: `${pathBuild}/video/`,
+	},
+
 	sprite: {
 		src: `${pathSrc}/icons/**/*.svg`,
 		watch: `${pathSrc}/icons/**/*.svg`,
 		dest: `${pathBuild}/icons`,
+	},
+
+	audio: {
+		src: `${pathSrc}/audio/**/*`,
+		watch: `${pathSrc}/audio/**/*`,
+		dest: `${pathBuild}/audio/`,
 	},
 
 	icon: {

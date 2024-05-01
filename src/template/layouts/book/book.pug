@@ -1,38 +1,38 @@
 -
 	var items = [
 		{
-			text: "Supercars",
-			img: "book/cars",
-		},
-		{
-			text: "Villas",
-			img: "book/villas",
-		},
-		{
-			text: "Private Helicopter",
-			img: "book/copter",
+			text: "Premium Cars",
+			video: "cars",
 		},
 		{
 			text: "Hotels",
-			img: "book/hotel",
+			video: "hotels",
 		},
 		{
 			text: "Yachts",
-			img: "book/yachts",
+			video: "yachts",
+		},
+		{
+			text: "Spa",
+			video: "spa",
+		},
+		{
+			text: "Private Helicopter",
+			video: "book/copter",
 		},
 		{
 			text: "Private jet",
-			img: "book/jet",
+			video: "book/jet",
 		},
 	]
-section.book.parallax#book
+section.book
 	.container 
 		.book__title
 			+title("Book with us", "decor")
 		.book__content
 			each item in items
-				.book__item.js-tilt
-					+img(`${item.img}`, "book__img", 540, 190, `${item.text}`, "lazy")
+				.book__item
+					video.book__video(src=`./video/${item.video}.mp4` muted loop) 
 					.book__rhomb-box
 						.book__rhomb
 						span.book__text= item.text

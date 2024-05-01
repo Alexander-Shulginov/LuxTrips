@@ -1,4 +1,8 @@
 .book {
+	.container {
+		max-width: 1440px;
+	}
+
 	&__title {
 		position: relative;
 		z-index: 100;
@@ -12,12 +16,10 @@
 	}
 
 	&__content {
+		transform: skewX(-13deg);
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		gap: $offset-base;
-
-		height: 633px;
+		gap: 4px;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&__item {
@@ -25,18 +27,33 @@
 
 		overflow: hidden;
 		display: flex;
+		flex-grow: 1;
 		align-items: center;
 		justify-content: center;
 
-		height: 190px;
+		height: 590px;
 
 		border-radius: $radius-base;
+
+		transition: flex-grow 0.6s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				flex-grow: 3;
+
+				// .book__rhomb-box {
+				// 	transform: skewX(13deg) scale(1);
+				// 	opacity: 1;
+				// }
+			}
+		}
 	}
 
-	&__img {
+	&__video {
 		position: absolute;
 		top: 0;
 		left: 0;
+		transform: skewX(13deg) scale(1.6);
 
 		width: 100%;
 		height: 100%;
@@ -47,9 +64,15 @@
 
 	&__rhomb-box {
 		position: relative;
+		transform: skewX(13deg);
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		// opacity: 0;
+
+		// transition: opacity 0.1s ease-in-out, transform 0.6s ease-in-out;
 	}
 
 	&__rhomb {
