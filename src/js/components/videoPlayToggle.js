@@ -7,7 +7,6 @@ export default function videoPlayToggle() {
 			elem.addEventListener('mouseenter', () => {
 				videoElems[index].play();
 			});
-
 			elem.addEventListener('mouseleave', () => {
 				videoElems[index].pause();
 			});
