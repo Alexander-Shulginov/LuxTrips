@@ -26,3 +26,11 @@
 		text-align: center;
 	}
 }
+
+@media (max-width: 768px) {
+	.place {
+		&__inner {
+			padding: 20px;
+		}
+	}
+}

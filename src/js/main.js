@@ -15,7 +15,6 @@ import videoPlayToggle from './components/videoPlayToggle';
 
 const selects = document.querySelectorAll('.select');
 selects.forEach((select) => new CustomSelect(select));
-
 const tabs = document.querySelectorAll('.tabs');
 tabs.forEach((tab) => new CustomTabs(tab, 1, 'horizontal'));
 
