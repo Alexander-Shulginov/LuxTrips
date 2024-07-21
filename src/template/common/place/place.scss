@@ -142,6 +142,10 @@
 		height: clamp-px(40, 57);
 
 		background-color: $color-decor;
+
+		@media (max-width: 1024px){
+			display: none;
+		}
 	}
 
 	&__nav-icon {
