@@ -6,7 +6,7 @@
 	left: 0;
 
 	width: 100%;
-	padding-top: 18px;
+	padding-top: 14px;
 
 	&__container {
 		display: flex;
@@ -21,6 +21,11 @@
 	&__logo {
 		width: 121px;
 		height: 63px;
+
+		svg {
+			width: inherit;
+			height: inherit;
+		}
 	}
 
 	&__nav-bg {
@@ -41,11 +46,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		margin-top: 10px;
-	}
-
-	&__item {
-		position: relative;
+		margin-top: 13px;
 	}
 
 	&__nav-link {
@@ -126,7 +127,7 @@
 	}
 
 	&__btn-call {
-		margin-top: 10px;
+		margin-top: 14px;
 	}
 
 	&__burger {

@@ -9,9 +9,9 @@
 	
 header.header 
 	.header__container
-		a.header__logo-link(href="/", aria-label="Logo") 
-			.header__logo
-				include ../logo/logo
+		a.header__logo(href="/", aria-label="Logo") 
+			include ../logo/logo
+				
 		nav.header__nav 
 			ul.header__list 
 				each link, key in links
