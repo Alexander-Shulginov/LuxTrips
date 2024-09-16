@@ -17,16 +17,21 @@
 		color: #000;
 		text-transform: uppercase;
 		letter-spacing: 0.64px;
-	}
 
-	&__text {
-		display: block;
-		transition: transform 1s ease-in-out;
+		border-bottom: 1px solid transparent;
+		outline: none;
+
+		transition: 1s ease-in-out;
+
+		&:focus-visible {
+			transform: scale(1.2);
+			border-bottom-color: black;
+		}
 	}
 
 	@media (any-hover: hover) {
 		&:hover {
-			.button-call__text {
+			.button-call__link {
 				transform: scale(1.2);
 			}
 		}

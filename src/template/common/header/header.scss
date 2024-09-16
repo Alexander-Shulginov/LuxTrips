@@ -6,7 +6,7 @@
 	left: 0;
 
 	width: 100%;
-	padding-top: 24px;
+	padding-top: 18px;
 
 	&__container {
 		display: flex;
@@ -37,22 +37,38 @@
 		z-index: 100;
 
 		display: flex;
-		gap: 40px;
-		gap: clamp-px(17, 40, 1024, 1200);
+		gap: 10px;
 		align-items: center;
 		justify-content: space-between;
+
+		margin-top: 10px;
 	}
 
 	&__item {
 		position: relative;
+	}
+
+	&__nav-link {
+		position: relative;
+
+		padding: 10px;
+
+		font-size: 16px;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: 0.64px;
+
+		outline: none;
 
 		&::after {
 			@include bg-svg("decor");
 
+			pointer-events: none;
 			content: "";
 
 			position: absolute;
-			top: -17px;
+			top: -9px;
 			left: 50%;
 			transform: translateX(-50%);
 
@@ -66,16 +82,17 @@
 
 			fill: #000;
 
-			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		}
 
 		&::before {
 			@include bg-svg("decor");
 
+			pointer-events: none;
 			content: "";
 
 			position: absolute;
-			bottom: -16px;
+			bottom: -8px;
 			left: 50%;
 			transform: translateX(-50%) rotate(180deg);
 
@@ -89,26 +106,27 @@
 
 			fill: #000;
 
-			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+		}
+
+		&:focus-visible::before,
+		&:focus-visible::after {
+			visibility: visible;
+			opacity: 1;
 		}
 
 		@media (any-hover: hover) {
 			&:hover::before,
-			&:hover::after {
+			&:hover::after,
+			&:focus-visible {
 				visibility: visible;
 				opacity: 1;
 			}
 		}
 	}
 
-	&__nav-link {
-		position: relative;
-
-		font-size: 16px;
-		font-weight: 400;
-		color: #000;
-		text-transform: uppercase;
-		letter-spacing: 0.64px;
+	&__btn-call {
+		margin-top: 10px;
 	}
 
 	&__burger {
