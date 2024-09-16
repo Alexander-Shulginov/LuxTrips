@@ -5,8 +5,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function gsapHero() {
-	// gsap.defaults({ delay: 0.2.3 });
-
 	gsap.timeline()
 		.from(['.hero__img-2', '.hero__subtitle'], {
 			right: -550,

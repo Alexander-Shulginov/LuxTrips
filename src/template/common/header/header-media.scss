@@ -24,7 +24,6 @@
 		&__logo {
 			position: relative;
 			z-index: 100;
-			transform: translateX(-25px);
 		}
 
 		&__nav {
@@ -80,15 +79,6 @@
 		&__btn-call {
 			position: relative;
 			z-index: 100;
-			display: block;
-			order: -1;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.header--mobile .header {
-		&__logo {
 			display: none;
 		}
 	}
@@ -96,17 +86,12 @@
 
 @media (max-height: 740px) {
 	.header--mobile .header {
-		&__logo {
-			display: none;
-		}
-
 		&__nav {
 			height: 100%;
 			padding-top: 60px;
 		}
 
 		&__nav-bg {
-			// display: none;
 			width: 60%;
 			height: 60%;
 			text-align: center;

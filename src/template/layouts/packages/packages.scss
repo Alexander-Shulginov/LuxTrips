@@ -92,10 +92,7 @@
 				.packages__name {
 					transform: translateY(35px);
 				}
-				.packages__rhomb-box {
-					transform: scale(1.2);
-				}
-
+				.packages__rhomb-box,
 				.packages__img {
 					transform: scale(1.1);
 				}
@@ -148,10 +145,10 @@
 	&__rhomb {
 		cursor: pointer;
 
-		transform: rotate(62deg) skewX(35deg) scaleY(cos(35deg));
+		transform: scaleY(2) rotate(45deg);
 
-		width: 125px;
-		height: 125px;
+		width: 90px;
+		height: 90px;
 
 		background-color: rgba(144, 144, 144, 0.14);
 		backdrop-filter: blur(10px);

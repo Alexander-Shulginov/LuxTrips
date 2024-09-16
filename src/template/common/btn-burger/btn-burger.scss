@@ -1,9 +1,9 @@
-$burger-width: 60px;
+$burger-width: 45px;
 
-$line-height: 2.5px;
-$line-gap: 11px;
+$line-height: 2px;
+$line-gap: 10px;
 $line-border-radius: 6px;
-$line-color: #ffffff;
+$line-color: #1d1d1b;
 
 $animation-delay: 0;
 $animation-duration: 0.25s;
@@ -50,6 +50,7 @@ $animation-duration: 0.25s;
 	}
 
 	&--open {
+		opacity: 0.7;
 		.burger__line--top {
 			bottom: calc(50% - $line-height / 2);
 			transform: rotate(135deg);
