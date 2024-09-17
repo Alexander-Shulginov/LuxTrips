@@ -1,0 +1,24 @@
+.menuMobile {
+	position: absolute;
+	z-index: 1300;
+	top: 34%;
+	left: 15%;
+	transform: scaleY(2) rotate(45deg);
+
+	display: none;
+
+	width: 100px;
+	height: 100px;
+
+	background-color: rgba(232, 233, 237, 0.5);
+	backdrop-filter: blur(2px);
+	border: 1.8px solid #fff;
+
+	transition: transform 1s ease-in;
+
+	@media (any-hover: hover) {
+		&:hover {
+			// transform: scale(20) rotate(62deg) skewX(35deg) scaleY(cos(35deg));
+		}
+	}
+}
