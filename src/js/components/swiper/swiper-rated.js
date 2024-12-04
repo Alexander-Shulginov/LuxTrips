@@ -1,44 +1,25 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, EffectCreative } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
+import EffectCarousel from './effect-carousel.esm';
 
 export default new Swiper('.swiper-rated', {
-	modules: [Navigation, Pagination, EffectCreative],
+	modules: [Navigation, Pagination, EffectCarousel],
 
 	loop: true,
 	speed: 1000,
-	// initialSlide: 6,
 	slidesPerView: 1.1,
 	centeredSlides: true,
-
-	effect: 'creative',
-	creativeEffect: {
-		prev: {
-			shadow: true,
-			translate: ['-49%', 0, -130],
-			rotate: [0, -4, 0],
-		},
-		next: {
-			shadow: true,
-			translate: ['49%', 0, -130],
-			rotate: [0, 4, 0],
-		},
-
-		limitProgress: 3,
-		progressMultiplier: 2,
-	},
+	effect: 'carousel',
 
 	breakpoints: {
 		550: {
-			slidesPerView: 1.8,
+			slidesPerView: 1.5,
 		},
-
-		850: {
-			slidesPerView: 2.4,
+		768: {
+			slidesPerView: 2.3,
 		},
-
 		1024: {
-			slidesPerView: 3.1,
-
+			slidesPerView: 3,
 		},
 	},
 
@@ -47,9 +28,9 @@ export default new Swiper('.swiper-rated', {
 		prevEl: '.swiper-button-prev.place__nav',
 	},
 
-	on: {
-		resize() {
-			this.update();
-		},
-	},
+	// on: {
+	// 	resize() {
+	// 		this.update();
+	// 	},
+	// },
 });
