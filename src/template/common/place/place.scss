@@ -6,6 +6,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 
+	// width: 350px;
 	height: clamp-px(520, 570);
 
 	&__img {
@@ -142,7 +143,7 @@
 
 		background-color: $color-decor;
 
-		@media (max-width: 1024px) {
+		@media (max-width: 1024px){
 			display: none;
 		}
 	}
