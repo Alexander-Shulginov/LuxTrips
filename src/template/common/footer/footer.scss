@@ -1,7 +1,7 @@
 .footer {
 	position: relative;
 
-	padding-bottom: 35px;
+	padding-bottom: 24px;
 
 	background-image: url(../img/footer/footer-bg.webp);
 	background-repeat: no-repeat;
@@ -49,16 +49,25 @@
 		justify-content: space-between;
 	}
 
-	&__item {
+	&__link {
 		position: relative;
 
+		padding: 10px 0;
+
+		font-family: $main-font;
+		font-size: 16px;
+		color: $color-text;
+		text-transform: uppercase;
+
+		outline: none;
 		&::after {
 			@include bg-svg("decor");
 
+			pointer-events: none;
 			content: "";
 
 			position: absolute;
-			top: -17px;
+			top: -9px;
 			left: 50%;
 			transform: translateX(-50%);
 
@@ -72,16 +81,17 @@
 
 			fill: #000;
 
-			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		}
 
 		&::before {
 			@include bg-svg("decor");
 
+			pointer-events: none;
 			content: "";
 
 			position: absolute;
-			bottom: -16px;
+			bottom: -8px;
 			left: 50%;
 			transform: translateX(-50%) rotate(180deg);
 
@@ -95,12 +105,19 @@
 
 			fill: #000;
 
-			transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out;
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+		}
+
+		&:focus-visible::before,
+		&:focus-visible::after {
+			visibility: visible;
+			opacity: 1;
 		}
 
 		@media (any-hover: hover) {
 			&:hover::before,
-			&:hover::after {
+			&:hover::after,
+			&:focus-visible {
 				visibility: visible;
 				opacity: 1;
 			}
@@ -135,15 +152,11 @@
 		transition: transform 1s ease-in-out;
 	}
 
-	&__link {
-		font-family: $main-font;
-		font-size: 16px;
-		color: $color-text;
-		text-transform: uppercase;
-	}
-
 	&__wrapper {
 		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		align-items: center;
 		justify-content: space-between;
 
 		font-family: $second-font;
