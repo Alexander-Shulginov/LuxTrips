@@ -9,14 +9,6 @@
 			flex-wrap: wrap;
 			gap: 28px;
 		}
-	}
-}
-
-@media (max-width: 768px) {
-	.footer {
-		&__list {
-			flex-direction: column;
-		}
 
 		&__decor .button-call {
 			padding: unset;
@@ -28,6 +20,7 @@
 				}
 			}
 		}
+
 		&__decor .button-call__link {
 			position: relative;
 
@@ -97,6 +90,20 @@
 					opacity: 1;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		background-size: cover;
+
+		&__inner {
+			margin-bottom: 90px;
+		}
+
+		&__list {
+			flex-direction: column;
 		}
 	}
 }

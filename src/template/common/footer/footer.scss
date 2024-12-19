@@ -5,7 +5,8 @@
 
 	background-image: url(../img/footer/footer-bg.webp);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position-y: 100%;
+	background-size: 100%;
 	&::after {
 		content: "";
 
@@ -43,7 +44,7 @@
 	}
 
 	&__list {
-		transform: translateX(-32px);
+		transform: translateX(-33px);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
