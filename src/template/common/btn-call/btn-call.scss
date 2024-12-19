@@ -18,14 +18,12 @@
 		text-transform: uppercase;
 		letter-spacing: 0.64px;
 
-		border-bottom: 1px solid transparent;
 		outline: none;
 
-		transition: 1s ease-in-out;
+		transition: transform .8s ease-in-out;
 
 		&:focus-visible {
 			transform: scale(1.2);
-			border-bottom-color: black;
 		}
 	}
 

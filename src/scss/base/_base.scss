@@ -5,11 +5,9 @@ html {
 	}
 	&::-webkit-scrollbar-track {
 		background-color: $color-light;
-		border-radius: 6px;
 	}
 	&::-webkit-scrollbar-thumb {
 		background-color: $color-decor;
-		border-radius: 6px;
 	}
 }
 

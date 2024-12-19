@@ -23,12 +23,8 @@
 
 		&__decor .button-call__link {
 			position: relative;
-
 			display: inline;
-
 			padding: 10px 0;
-
-			border-bottom: none;
 			outline: none;
 			&::after {
 				@include bg-svg("decor");
