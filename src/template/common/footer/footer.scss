@@ -108,48 +108,16 @@
 			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		}
 
-		&:focus-visible::before,
-		&:focus-visible::after {
-			visibility: visible;
-			opacity: 1;
-		}
-
 		@media (any-hover: hover) {
 			&:hover::before,
 			&:hover::after,
-			&:focus-visible {
+			&:focus-visible,
+			&:focus-visible::before,
+			&:focus-visible::after {
 				visibility: visible;
 				opacity: 1;
 			}
 		}
-	}
-
-	&__item--decor {
-		cursor: pointer;
-
-		padding: 22px 28px;
-
-		background-image: url(../icons/sprite.svg#border);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		&::after,
-		&::before {
-			content: none;
-		}
-
-		@media (any-hover: hover) {
-			&:hover {
-				.footer__link--decor {
-					transform: scale(1.2);
-				}
-			}
-		}
-	}
-
-	&__link--decor {
-		display: block;
-		transition: transform 1s ease-in-out;
 	}
 
 	&__wrapper {
@@ -162,5 +130,22 @@
 		font-family: $second-font;
 		font-size: 12px;
 		color: $color-light;
+	}
+
+	&__info {
+		a {
+			border-bottom: 2px solid transparent;
+			outline: none;
+			transition: border-bottom-color 0.4s ease-in-out;
+
+			@media (any-hover: hover) {
+				&:hover {
+					border-bottom-color: $color-light;
+				}
+			}
+		}
+		a:focus-visible {
+			border-bottom-color: $color-light;
+		}
 	}
 }
