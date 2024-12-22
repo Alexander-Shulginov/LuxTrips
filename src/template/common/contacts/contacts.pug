@@ -1,7 +1,7 @@
 section.contacts#contact
 	.contacts__inner 
-		+title("Contact").contacts__title
+		+title("Contact").contacts__title(data-gsap-contact)
 		form.contacts__form(action="#") 
-			input.contacts__input(type="text", required, placeholder="Name")
-			input.contacts__input(type="text", required, placeholder="Phone")
-			+btn-decor("dark", "Call me back")
+			input.contacts__input(type="text", required, placeholder="Name" data-gsap-contact)
+			input.contacts__input(type="text", required, placeholder="Phone" data-gsap-contact)
+			+btn-decor("dark", "Call me back")(data-gsap-contact)

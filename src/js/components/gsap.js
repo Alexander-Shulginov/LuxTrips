@@ -15,7 +15,7 @@ export default function gsapInit() {
 	gsapBook();
 	gsapRated();
 	gsapFooter();
-	// gsapContact();
+	gsapContact();
 	gsapReviews();
 	gsapPackages();
 	gsapCustomise();
