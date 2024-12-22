@@ -6,6 +6,7 @@
 	backdrop-filter: blur(4.5px);
 	border: 1px solid $color-light;
 	border-radius: $radius-base;
+
 	&::before {
 		content: "";
 
@@ -30,10 +31,11 @@
 
 		background: rgba(226, 211, 206, 0.8);
 		backdrop-filter: blur(4.5px);
+		border-radius: $radius-base;
 	}
 
 	&__title {
-		margin-bottom: 24px;
+		margin-bottom: 36px;
 		text-align: center;
 	}
 
@@ -64,19 +66,5 @@
 			color: inherit;
 			text-align: center;
 		}
-	}
-
-	&__video {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-
-		width: 100%;
-		height: 100%;
-
-		object-fit: cover;
-		border-radius: $radius-base;
 	}
 }
