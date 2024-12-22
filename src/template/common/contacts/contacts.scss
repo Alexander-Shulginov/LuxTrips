@@ -55,7 +55,6 @@
 	&__input {
 		width: 100%;
 		padding: 20px;
-		outline: none;
 
 		font-family: $second-font;
 		font-size: 16px;
@@ -65,6 +64,7 @@
 		backdrop-filter: blur(10px);
 		border: 1px solid $color-light;
 		border-radius: 95px;
+		outline: none;
 
 		&::placeholder {
 			font-family: inherit;
