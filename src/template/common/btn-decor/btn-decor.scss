@@ -76,9 +76,16 @@
 		border-radius: 74px;
 
 		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		outline: none;
 
 		@media (any-hover: hover) {
 			&:hover {
+				.btn-decor__text {
+					transform: scale(1.1);
+				}
+			}
+
+			&:focus-visible {
 				.btn-decor__text {
 					transform: scale(1.1);
 				}
