@@ -18,7 +18,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 	loop: true,
 	speed: 800,
 	spaceBetween: 16,
-	slidesPerView: 1,
+	slidesPerView: 1.1,
 	breakpoints: {
 		768: {
 			slidesPerView: 1.4,

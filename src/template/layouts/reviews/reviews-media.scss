@@ -6,18 +6,6 @@
 		&__container::after {
 			content: none;
 		}
-
-		&__item {
-			height: 540px;
-		}
-	}
-}
-
-@media (min-width: 1240px) {
-	.reviews {
-		&__item {
-			height: 555px;
-		}
 	}
 }
 
@@ -28,13 +16,9 @@
 		&__container {
 			margin-bottom: 200px;
 			&::after {
-				width: 220px;
+				width: 100px;
 				height: 96%;
 			}
-		}
-
-		&__item {
-			height: 540px;
 		}
 	}
 }
@@ -43,13 +27,5 @@
 	.reviews {
 		padding-bottom: 50px;
 		background-position-y: 58%;
-		&__item {
-			height: 550px;
-			min-height: unset;
-		}
-
-		&__container::after {
-			content: none;
-		}
 	}
 }
