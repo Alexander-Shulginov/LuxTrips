@@ -33,10 +33,6 @@ const swiperReviews = new Swiper('.swiper-reviews', {
 		},
 	},
 
-	pagination: {
-		el: '.swiper-pagination-reviews',
-	},
-
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
