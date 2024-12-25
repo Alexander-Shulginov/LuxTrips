@@ -1,32 +1,55 @@
 .customise {
 	position: relative;
 
-	padding-bottom: 100px;
+	padding: 100px 0;
 
 	background-image: url(../img/customise/customise-bg2x.webp);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: bottom;
-	background-size: contain;
+	background-size: cover;
 
 	&::after {
 		content: "";
 
 		position: absolute;
 		right: 0;
-		bottom: -2px;
+		bottom: -1px;
 		left: 0;
 
 		width: 100%;
-		height: 300px;
+		height: 200px;
 
-		background-image: url(../img/reviews/gradient-bg.webp);
-		background-repeat: no-repeat;
-		background-size: cover;
+		background: linear-gradient(
+			180deg,
+			rgba(226, 211, 206, 0) 0%,
+			rgba(226, 211, 206, 0.5) 50%,
+			rgb(226, 211, 206) 100%
+		);
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		width: 100%;
+		height: 200px;
+
+		background: linear-gradient(
+			180deg,
+			rgb(226, 211, 206) 0% rgba(226, 211, 206, 0.5) 50%,
+			rgba(226, 211, 206, 0) 100%
+		);
 	}
 	&__sky--left {
+		pointer-events: none;
+
 		position: absolute;
-		z-index: -1;
+		z-index: 1;
 		top: -10%;
 		left: 0;
 
@@ -39,8 +62,10 @@
 	}
 
 	&__sky--right {
+		pointer-events: none;
+
 		position: absolute;
-		z-index: -1;
+		z-index: 1;
 		top: 0;
 		right: 0;
 
@@ -60,6 +85,8 @@
 	}
 
 	&__inner {
+		position: relative;
+		z-index: 2;
 		display: flex;
 		flex-direction: column;
 		gap: 75px;

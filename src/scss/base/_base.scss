@@ -1,5 +1,7 @@
 html {
 	// scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+
 	&::-webkit-scrollbar {
 		width: 6px;
 	}

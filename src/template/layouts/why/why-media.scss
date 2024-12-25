@@ -5,6 +5,7 @@
 		}
 	}
 }
+
 @media (min-width: 1900px) {
 	.why {
 		background-image: url(../img/why/why-bg2x.webp);
@@ -18,6 +19,7 @@
 
 @media (max-width: 768px) {
 	.why {
+		padding-bottom: 100px;
 		&__content {
 			grid-template-columns: 1fr 1fr;
 			max-width: 620px;
