@@ -2,27 +2,27 @@
 	var items = [
 		{
 			text: "Premium Cars",
-			video: "cars",
+			img: "cars",
 		},
 		{
 			text: "Private jet",
-			video: "jet",
+			img: "jet",
 		},
 		{
-			text: "Hotels",
-			video: "hotels",
+			text: "Helicopter",
+			img: "copter",
 		},
 		{
 			text: "Yachts",
-			video: "yachts",
+			img: "yachts",
 		},
 		{
-			text: "Spa",
-			video: "spa",
+			text: "Hotels",
+			img: "villas",
 		},
 		{
 			text: "Best service",
-			video: "service",
+			img: "hotel",
 		},
 	]
 
@@ -33,7 +33,7 @@ section.book
 		.book__content
 			each item in items
 				.book__item
-					video.book__video(src=`./video/${item.video}.mp4` muted loop) 
+					img.book__img(src=`./img/book/${item.img}.webp` alt= item.text) 
 					.book__rhomb-box
 						.book__rhomb
 						span.book__text= item.text
