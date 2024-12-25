@@ -30,7 +30,7 @@ section.book
 	.container 
 		.book__title
 			+title("Book with us", "decor")
-		//- .book__content
+		.book__content
 			each item in items
 				.book__item
 					video.book__video(src=`./video/${item.video}.mp4` muted loop) 
