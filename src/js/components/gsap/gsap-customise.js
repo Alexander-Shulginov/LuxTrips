@@ -40,35 +40,30 @@ export default function gsapCustomise() {
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation--1',
-			// start: '-960%',
 			toggleClass: 'customise__animation--start',
 		},
 	});
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation--2',
-			// start: '-1060%',
 			toggleClass: 'customise__animation--start',
 		},
 	});
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation--3',
-			// start: '-1160%',
 			toggleClass: 'customise__animation--start',
 		},
 	});
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation--4',
-			// start: '-1260%',
 			toggleClass: 'customise__animation--start',
 		},
 	});
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation--5',
-			// start: '-1360%',
 			toggleClass: 'customise__animation--start',
 		},
 	});
