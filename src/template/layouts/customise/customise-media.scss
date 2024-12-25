@@ -2,39 +2,36 @@
 	.customise {
 		padding-top: 140px;
 		background-image: url(../img/customise/customise-bg3x.webp);
-		background-size: cover;
-	}
-}
-
-@media (max-width: 1200px) {
-	.customise {
-		background-size: unset;
-		background-size: cover;
 	}
 }
 
 @media (max-width: 1024px) {
 	.customise {
 		background-image: url(../img/customise/customise-bg.webp);
+		background-position-x: 44%;
 		background-size: unset;
 	}
 }
 
 @media (max-width: 768px) {
 	.customise {
-		background-position-x: 41%;
-		background-position-y: 102%;
+		background-position-x: 22%;
+		background-position-y: 95%;
+		background-size: 900px;
 
-		&__sky--left {
-			display: none;
+		&__btn {
+			margin-bottom: 250px;
+		}
+
+		&__inner {
+			padding-left: 12px;
 		}
 	}
 }
 
 @media (max-width: 500px) {
 	.customise {
-		background-position-x: 34%;
-		background-position-y: 119%;
+		// background-position-x: 28%;
 		&__item {
 			gap: 28px;
 		}

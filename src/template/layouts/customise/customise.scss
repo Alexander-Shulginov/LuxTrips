@@ -5,7 +5,7 @@
 
 	background-image: url(../img/customise/customise-bg2x.webp);
 	background-repeat: no-repeat;
-	background-position-x: center;
+	background-position-x: 37%;
 	background-position-y: bottom;
 	background-size: cover;
 
@@ -87,6 +87,7 @@
 	&__inner {
 		position: relative;
 		z-index: 2;
+
 		display: flex;
 		flex-direction: column;
 		gap: 75px;
@@ -171,30 +172,32 @@
 	}
 
 	&__animation {
+		$delay: 0.8;
+
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
-		animation: animation 5s linear forwards;
+		animation: animation 4s linear forwards;
 		animation-play-state: paused;
 	}
 
 	&__animation--1 {
-		animation-delay: 0.9s;
+		animation-delay: 0.6s;
 	}
 
 	&__animation--2 {
-		animation-delay: 1.8s;
+		animation-delay: 2s;
 	}
 
 	&__animation--3 {
-		animation-delay: 2.7s;
+		animation-delay: 2s;
 	}
 
 	&__animation--4 {
-		animation-delay: 3.6s;
+		animation-delay: 3s;
 	}
 
 	&__animation--5 {
-		animation-delay: 4.5s;
+		animation-delay: 3s;
 	}
 
 	&__animation--start {
