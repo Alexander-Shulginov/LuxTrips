@@ -38,7 +38,7 @@ section.book
 			+title("Book with us", "decor")
 		.book__content
 			each item in items
-				.book__item
+				.book__item(data-gsap-book)
 					img.book__img(src=`./img/book/${item.img}.webp` alt= item.text) 
 					.book__rhomb-box
 						.book__rhomb

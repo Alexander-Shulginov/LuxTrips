@@ -1,5 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 .book {
+	margin-bottom: 120px;
 	.container {
 		max-width: 1440px;
 	}
@@ -131,5 +132,9 @@
 		@media (max-width: 768px) {
 			font-size: 18px;
 		}
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 20px;
 	}
 }

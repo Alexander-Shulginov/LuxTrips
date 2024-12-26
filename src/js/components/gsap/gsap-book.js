@@ -17,6 +17,20 @@ export default function gsapBook() {
 			},
 			opacity: 1,
 		},
+	});
 
+	const elements = gsap.utils.toArray('[data-gsap-book]');
+
+	elements.forEach((element, index) => {
+		gsap.from(element, {
+			scrollTrigger: {
+				trigger: '.book__content',
+				start: '-150%',
+			},
+			opacity: 0,
+			y: 30,
+			duration: 0.9,
+			delay: index * 0.4,
+		});
 	});
 }
