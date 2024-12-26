@@ -20,7 +20,8 @@
 @media (max-width: 768px) {
 	.why {
 		padding-bottom: 100px;
-		background-position-y: -112px;
+		background-position-y: 20%;
+		background-size: 160%;
 
 		&__content {
 			grid-template-columns: 1fr 1fr;
