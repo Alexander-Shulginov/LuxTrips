@@ -9,9 +9,8 @@ import flyingNavSlider from './components/flyingNavSlider';
 import { resetSliderPosition } from './components/swiper/swiper-packages';
 import burgerMenu from './components/burgerMenu';
 import gsapInit from './components/gsap';
-// import parallaxInit from './components/parallax';
+import parallaxInit from './components/parallax';
 import smoothScroll from './components/smoothScroll';
-import videoPlayToggle from './components/videoPlayToggle';
 
 const selects = document.querySelectorAll('.select');
 selects.forEach((select) => new CustomSelect(select));
@@ -24,7 +23,6 @@ flyingNavSlider();
 resetSliderPosition();
 burgerMenu();
 // parallaxInit();
-videoPlayToggle();
 
 //! scroll disabled
 // window.setTimeout(() => {

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .book {
 	.container {
 		max-width: 1440px;
@@ -9,7 +10,7 @@
 
 		width: 180px;
 		margin: 0 auto;
-		margin-bottom: 70px;
+		margin-bottom: 110px;
 		padding-top: 45px;
 
 		text-align: center;
@@ -38,9 +39,20 @@
 
 		transition: flex-grow 0.6s ease-in-out;
 
-		@media (any-hover: hover) {
-			&:hover {
-				flex-grow: 2;
+		&:hover {
+			flex-grow: 2;
+
+			.book__rhomb {
+				width: 1000px;
+				height: 1000px;
+			}
+
+			.book__text {
+				opacity: 0;
+			}
+
+			.book__descr {
+				opacity: 1;
 			}
 		}
 	}
@@ -68,7 +80,9 @@
 		outline: 1.8px solid $color-decor;
 		outline-offset: 6px;
 
-		@media (max-width: 768px){
+		transition: width 0.6s linear, height 0.6s linear;
+
+		@media (max-width: 768px) {
 			width: 80px;
 			height: 80px;
 		}
@@ -80,10 +94,6 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
 		font-family: $main-font;
 		font-size: 32px;
 		line-height: 0.9;
@@ -92,7 +102,33 @@
 		text-transform: uppercase;
 		letter-spacing: $letter-space-large;
 
-		@media (max-width: 768px){
+		transition: opacity 0.3s linear;
+
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+
+	&__descr {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 100%;
+		padding: 24px;
+
+		font-family: $main-font;
+		font-size: 20px;
+		line-height: 1.3;
+		color: $color-light;
+		text-align: center;
+
+		opacity: 0;
+
+		transition: opacity 0.3s ease-in-out;
+
+		@media (max-width: 768px) {
 			font-size: 18px;
 		}
 	}

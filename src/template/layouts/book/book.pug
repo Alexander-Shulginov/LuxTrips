@@ -1,28 +1,34 @@
 -
 	var items = [
 		{
-			text: "Premium Cars",
+			text: "Premium <br> Cars",
 			img: "cars",
+			descr: "Luxurious cars for maximum comfort and style, perfect for your exclusive journey.",
 		},
 		{
-			text: "Private jet",
+			text: "Private <br> jet",
 			img: "jet",
+			descr: "Private jets offering absolute privacy and first-class service.",
 		},
 		{
 			text: "Helicopter",
 			img: "copter",
+			descr: "Elite helicopters for swift and sophisticated travel to any destination.",
 		},
 		{
 			text: "Yachts",
 			img: "yachts",
+			descr: "Magnificent yachts for unforgettable sea adventures and luxurious relaxation on the water.",
 		},
 		{
 			text: "Hotels",
 			img: "villas",
+			descr: "Handpicked high-class hotels with exceptional comfort and personalized service.",
 		},
 		{
-			text: "Best service",
+			text: "Best <br> service",
 			img: "hotel",
+			descr: "Unparalleled service tailored to meet the most refined demands.",
 		},
 	]
 
@@ -36,4 +42,5 @@ section.book
 					img.book__img(src=`./img/book/${item.img}.webp` alt= item.text) 
 					.book__rhomb-box
 						.book__rhomb
-						span.book__text= item.text
+						p.book__text!= item.text
+					p.book__descr= item.descr
