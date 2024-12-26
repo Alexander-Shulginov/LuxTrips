@@ -67,7 +67,6 @@
 
 	&__subtitle--second {
 		align-self: flex-end;
-		// width: 370px;
 	}
 
 	&__link {
@@ -94,11 +93,18 @@
 		top: 20%;
 		left: 45%;
 
-		width: clamp-px(65, 155);
-		height: clamp-px(65, 155);
+	width: 110px;
+	height: 110px;
 
 		backdrop-filter: blur(4px);
 		border: none;
+
+		@media (max-width: 768px){
+			width: 80px;
+			height: 80px;
+		}
+
+
 	}
 
 	&__img-rhomb--second {

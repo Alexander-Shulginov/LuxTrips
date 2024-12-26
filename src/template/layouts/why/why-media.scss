@@ -20,6 +20,8 @@
 @media (max-width: 768px) {
 	.why {
 		padding-bottom: 100px;
+		background-position-y: -112px;
+
 		&__content {
 			grid-template-columns: 1fr 1fr;
 			max-width: 620px;
@@ -33,10 +35,6 @@
 
 		&__subtitle--first {
 			grid-column: 2 span;
-		}
-
-		&__subtitle--second {
-			align-self: unset;
 		}
 
 		&__picture {
@@ -81,16 +79,20 @@
 
 @media (max-width: 475px) {
 	.why {
-		background-size: cover;
-		&__content {
-			grid-column-gap: 0;
-			grid-template-columns: 0.5fr 1fr;
-		}
 		&__link {
 			grid-column: span 2;
 			margin: 0 auto;
 		}
 
+		&__text {
+			grid-row: 2 / 4;
+			align-self: center;
+		}
+
+		&__subtitle--second {
+			grid-column: 2 span;
+			margin-top: 36px;
+		}
 		&__picture {
 			transform: translateX(-35px);
 		}

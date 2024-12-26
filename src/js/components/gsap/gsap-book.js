@@ -25,7 +25,7 @@ export default function gsapBook() {
 		gsap.from(element, {
 			scrollTrigger: {
 				trigger: '.book__content',
-				start: '-150%',
+				start: '-130%',
 			},
 			opacity: 0,
 			y: 30,
