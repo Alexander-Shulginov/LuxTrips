@@ -7,7 +7,7 @@
 	background-image: url(../img/why/why-bg.webp);
 	background-repeat: no-repeat;
 	background-position-x: 55%;
-	background-position-y: -95px;
+	background-position-y: -230px;
 	background-size: cover;
 
 	&__inner {
@@ -17,10 +17,8 @@
 	&__top-block {
 		display: flex;
 		gap: clamp-px(18, 55);
-
 		max-width: 538px;
-		margin: 0 auto;
-		margin-bottom: clamp-px(320, 456);
+		margin: 0 auto 490px auto;
 	}
 
 	&__text {
@@ -77,10 +75,9 @@
 	}
 
 	&__img-rhomb {
-		// z-index: 1000;
 		position: absolute;
 		right: 0;
-		bottom: -7%;
+		bottom: -5%;
 		left: 0;
 
 		margin: 0 auto;

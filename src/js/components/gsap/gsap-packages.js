@@ -6,13 +6,15 @@ export default function gsapPackages() {
 	const items = document.querySelectorAll('.packages__item');
 	const tl = gsap.timeline();
 
-	items.forEach((item) => {
+	items.forEach((item, index) => {
 		tl.from(
 			item,
 			{
-				y: 80,
+				// y: 120,
+				x: -120,
 				opacity: 0,
-				duration: 0.5,
+				duration: 0.8,
+				delay: index * 0.4,
 			},
 			0,
 		);

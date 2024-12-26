@@ -42,6 +42,12 @@
 		display: none;
 	}
 
+	&__content {
+		max-width: 1140px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);

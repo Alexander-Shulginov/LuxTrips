@@ -42,7 +42,7 @@
 		&__title--mobile {
 			display: flex;
 			flex-direction: row;
-			align-items: flex-end;
+			align-items: center;
 			justify-content: space-between;
 
 			width: 100%;
@@ -63,4 +63,11 @@
 			top: 25%;
 		}
 	}
+}
+
+@media (max-width: 425px){
+	.packages .section-title {
+		font-size: 28px;
+	}
+	
 }

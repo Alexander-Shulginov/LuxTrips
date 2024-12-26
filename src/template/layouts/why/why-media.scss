@@ -1,15 +1,6 @@
-@media (min-width: 2561px) {
-	.why {
-		&__top-block {
-			margin-bottom: 1100px;
-		}
-	}
-}
-
 @media (min-width: 1900px) {
 	.why {
 		background-image: url(../img/why/why-bg2x.webp);
-		// background-position-y: -355px;
 
 		&__top-block {
 			margin-bottom: 800px;
@@ -62,9 +53,8 @@
 		}
 
 		&__decor-img--2 {
-			top: 16%;
-			left: 71%;
-			display: none;
+			top: 31%;
+			left: 34%;
 		}
 
 		&__decor-img--3 {
