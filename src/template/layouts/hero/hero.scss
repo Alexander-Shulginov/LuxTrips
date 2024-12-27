@@ -14,7 +14,7 @@
 
 		position: absolute;
 		z-index: 500;
-		bottom: -30px;
+		bottom: -190px;
 		left: 0;
 
 		width: 100%;
@@ -75,14 +75,14 @@
 
 	&__img-1 {
 		position: absolute;
-		top: 48%;
+		top: 52%;
 		width: 100%;
 	}
 
 	&__img-2 {
 		position: absolute;
 		z-index: 220;
-		top: 62%;
+		top: 69%;
 		width: 100%;
 	}
 
@@ -92,6 +92,16 @@
 		top: -32.8px;
 		left: 49.8%;
 		transform: translateX(-50%);
+
+		.rhomb--large {
+			width: 90px;
+			height: 90px;
+
+			@media (max-width: 1024px){
+				width: 60px;
+				height: 60px;
+			}
+		}
 	}
 
 	&__rhomb--big {

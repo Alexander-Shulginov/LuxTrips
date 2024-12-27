@@ -3,6 +3,7 @@
 		width: 600px;
 		height: auto;
 		padding-top: 40px;
+		top: -36px;
 
 		&__form {
 			grid-template-columns: repeat(2, auto);
@@ -21,6 +22,7 @@
 @media (max-width: 768px) {
 	.find {
 		width: 90%;
+		top: -1px;
 	}
 }
 
