@@ -1,9 +1,11 @@
 .hero {
 	position: relative;
 
+	overflow: hidden;
+
 	padding-top: 130px;
 	padding-bottom: 60px;
-	overflow: hidden;
+
 	background-image: url("../img/hero/bg-1.webp");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -97,7 +99,7 @@
 			width: 90px;
 			height: 90px;
 
-			@media (max-width: 1024px){
+			@media (max-width: 1024px) {
 				width: 60px;
 				height: 60px;
 			}
@@ -109,6 +111,10 @@
 		z-index: 240;
 		top: 86%;
 		right: 15%;
+
+		@media (max-width: 768px) {
+			top: 115%;
+		}
 	}
 
 	&__rhomb--medium {
@@ -116,6 +122,10 @@
 		z-index: 200;
 		top: 85%;
 		left: 5%;
+
+		@media (max-width: 768px) {
+			top: 107%;
+		}
 	}
 
 	&__rhomb--small-1 {

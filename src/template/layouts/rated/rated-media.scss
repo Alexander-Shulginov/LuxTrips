@@ -26,6 +26,12 @@
 	}
 }
 
+@media (max-width: 580px) {
+	.rated::after {
+		top: -15%;
+	}
+}
+
 @media (max-width: 475px) {
 	.rated {
 		padding-bottom: 25px;
