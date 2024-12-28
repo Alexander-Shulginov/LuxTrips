@@ -29,6 +29,10 @@
 		}
 	}
 
+	.header--mobile {
+		z-index: 1400;
+	}
+
 	.header--mobile .header {
 		&__logo {
 			position: relative;
