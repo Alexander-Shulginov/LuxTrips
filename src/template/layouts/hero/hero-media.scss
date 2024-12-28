@@ -18,11 +18,11 @@
 		}
 
 		&__wrapper {
-			margin-bottom: 120px;
+			margin-bottom: 175px;
 		}
 
 		&__img-1 {
-			top: 60%;
+			top: 56%;
 		}
 
 		&__img-2 {
@@ -33,27 +33,14 @@
 
 @media (max-width: 768px) {
 	.hero {
-		&__wrapper {
-			margin-bottom: 175px;
-		}
-
 		&__img-1 {
-			top: 56%;
 			overflow: hidden;
 			height: clamp-px(300, 400, 375, 768);
 			object-fit: cover;
 		}
 
 		&__rhomb--large {
-			top: -23.8px;
-		}
-	}
-}
-
-@media (max-width: 580px) {
-	.hero {
-		&__rhomb--large {
-			left: 50.8%;
+			top: -10px;
 		}
 	}
 }
