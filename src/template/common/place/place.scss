@@ -143,7 +143,7 @@
 
 		background-color: $color-decor;
 
-		@media (max-width: 1024px){
+		@media (max-width: 1024px) {
 			display: none;
 		}
 	}
@@ -163,7 +163,10 @@
 
 	&__nav--hidden {
 		width: 0px;
-		transition: width 0.5s ease-in-out;
+		height: 0px;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out,
+			height 0.5s ease-in-out;
 	}
 }
 
@@ -180,6 +183,7 @@
 
 	margin-top: 12px;
 }
+
 
 .swiper-pagination-bullet {
 	width: clamp-px(16, 38);
@@ -198,6 +202,7 @@
 .swiper-button-next.swiper-button-disabled {
 	pointer-events: unset;
 	cursor: none;
+	opacity: 1;
 }
 
 .swiper-button-next,

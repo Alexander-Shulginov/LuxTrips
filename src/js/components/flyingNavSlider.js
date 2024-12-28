@@ -51,6 +51,11 @@ export default function flyingNavSlider() {
 		}
 	});
 
+	sliderArea.addEventListener('mouseleave', () => {
+		btnNavLeft.classList.add(cssHiddenClass);
+		btnNavRight.classList.add(cssHiddenClass);
+	});
+
 	window.addEventListener('resize', () => {
 		sliderAreaParams = sliderArea.getBoundingClientRect();
 		if (getWindowWidth() < 1024) {

@@ -9,7 +9,6 @@ import flyingNavSlider from './components/flyingNavSlider';
 import { resetSliderPosition } from './components/swiper/swiper-packages';
 import burgerMenu from './components/burgerMenu';
 import gsapInit from './components/gsap';
-import parallaxInit from './components/parallax';
 import smoothScroll from './components/smoothScroll';
 
 const selects = document.querySelectorAll('.select');
@@ -22,7 +21,6 @@ gsapInit();
 flyingNavSlider();
 resetSliderPosition();
 burgerMenu();
-// parallaxInit();
 
 //! scroll disabled
 // window.setTimeout(() => {
