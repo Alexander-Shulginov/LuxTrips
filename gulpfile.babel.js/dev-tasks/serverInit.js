@@ -6,6 +6,7 @@ export const bs = browserSync.create();
 const configServer = {
 	server: {
 		baseDir: paths.root,
+		open: false,
 	},
 };
 
