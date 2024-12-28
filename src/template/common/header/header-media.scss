@@ -1,5 +1,6 @@
 @media (max-width: 1023px) {
 	.header {
+		bottom: 0;
 		&__burger {
 			position: relative;
 			z-index: 100;
@@ -11,12 +12,20 @@
 		}
 
 		&__nav {
-			display: none;
-			padding: unset;
-		}
+			pointer-events: none;
 
-		&__nav-link {
-			padding: 0 10px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+
+			overflow: hidden;
+			display: none;
+
+			height: 100vh;
+			padding: unset;
+
+			background-color: $color-bg;
 		}
 	}
 
@@ -27,22 +36,9 @@
 		}
 
 		&__nav {
-			position: absolute;
-			top: 0;
-			right: 0;
-			left: 0;
-			// padding: 150px clamp-px(28, 72) 72px;
-			transform: translate(-50%, -50%);
-
-			overflow: hidden;
+			pointer-events: all;
 			display: block;
-
-			height: 100vh;
-
-			background-color: $color-bg;
-
-			transition: all 0.3s ease-in-out;
-			animation: menu-anim 0.5s linear forwards;
+			animation: menu-anim 0.3s linear forwards;
 		}
 
 		&__nav-bg {
@@ -68,12 +64,6 @@
 
 		&__item {
 			padding: 22px;
-
-			&:last-child {
-				display: block;
-				width: 155px;
-				text-align: center;
-			}
 		}
 
 		&__btn-call {
@@ -116,13 +106,13 @@
 
 @keyframes menu-anim {
 	from {
-		transform: scale(0);
-		height: 0;
+		// transform: scale(0);
+		// height: 0;
 		opacity: 0;
 	}
 	to {
-		transform: scale(1);
-		height: 100vh;
+		// transform: scale(1);
+		// height: 100vh;
 		opacity: 1;
 	}
 }
