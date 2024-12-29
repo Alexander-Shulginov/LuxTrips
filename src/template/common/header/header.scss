@@ -19,8 +19,69 @@
 	}
 
 	&__logo {
+		position: relative;
 		width: 121px;
 		height: 63px;
+		outline: none;
+
+		@media (max-width: 768px){
+			width: 100px;
+			height: 60px;
+		}
+		&::after {
+			@include bg-svg("common--decor");
+
+			pointer-events: none;
+			content: "";
+
+			position: absolute;
+			top: 58%;
+			left: -16px;
+			transform: translateY(-50%) rotate(270deg);
+
+			width: 19px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+		}
+
+		&::before {
+			@include bg-svg("common--decor");
+
+			pointer-events: none;
+			content: "";
+
+			position: absolute;
+			top: 58%;
+			right: -16px;
+			transform: translateY(-50%) rotate(90deg);
+
+			width: 19px;
+			height: 24px;
+
+			visibility: hidden;
+			opacity: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			fill: #000;
+
+			transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+		}
+		&:focus-visible {
+			&::after,
+			&::before {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
 
 		svg {
 			width: inherit;
