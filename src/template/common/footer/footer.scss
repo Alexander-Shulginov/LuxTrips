@@ -150,4 +150,14 @@
 			border-bottom-color: $color-light;
 		}
 	}
+
+	&__decor {
+		.button-call {
+			padding: 0;
+		}
+
+		.button-call__link {
+			padding: 22px 28px;
+		}
+	}
 }

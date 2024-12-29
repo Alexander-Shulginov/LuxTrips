@@ -1,4 +1,6 @@
 .btn-link {
+	cursor: pointer;
+
 	flex-shrink: 0;
 
 	padding: 10px clamp-px(18, 28);
@@ -8,6 +10,7 @@
 	text-transform: uppercase;
 	letter-spacing: $letter-space-small;
 
+	background-color: transparent;
 	border: 1px solid $color-dark;
 	border-radius: $radius-large;
 	outline: none;
@@ -15,8 +18,7 @@
 	&__text {
 		display: block;
 		border-bottom: 1px solid transparent;
-		transition: transform 1s ease-in-out,
-			border-bottom-color 1s ease-in-out;
+		transition: transform 1s ease-in-out, border-bottom-color 1s ease-in-out;
 	}
 
 	@media (any-hover: hover) {

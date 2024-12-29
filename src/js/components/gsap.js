@@ -2,7 +2,6 @@ import gsapWhy from './gsap/gsap-why';
 import gsapBook from './gsap/gsap-book';
 import gsapHero from './gsap/gsap-hero';
 import gsapRated from './gsap/gsap-rated';
-import gsapFooter from './gsap/gsap-footer';
 import gsapContact from './gsap/gsap-contact';
 import gsapReviews from './gsap/gsap-reviews';
 import gsapPackages from './gsap/gsap-packages';
@@ -14,7 +13,6 @@ export default function gsapInit() {
 	gsapHero();
 	gsapBook();
 	gsapRated();
-	gsapFooter();
 	gsapContact();
 	gsapReviews();
 	gsapPackages();
