@@ -27,7 +27,7 @@
 			padding: 10px 0;
 			outline: none;
 			&::after {
-				@include bg-svg("decor");
+				@include bg-svg("common--decor");
 
 				pointer-events: none;
 				content: "";
@@ -52,7 +52,7 @@
 			}
 
 			&::before {
-				@include bg-svg("decor");
+				@include bg-svg("common--decor");
 
 				pointer-events: none;
 				content: "";

@@ -63,7 +63,7 @@
 
 		outline: none;
 		&::after {
-			@include bg-svg("decor");
+			@include bg-svg("common--decor");
 
 			pointer-events: none;
 			content: "";
@@ -73,7 +73,7 @@
 			left: 50%;
 			transform: translateX(-50%);
 
-			width: 30px;
+			width: 19px;
 			height: 24px;
 
 			visibility: hidden;
@@ -87,7 +87,7 @@
 		}
 
 		&::before {
-			@include bg-svg("decor");
+			@include bg-svg("common--decor");
 
 			pointer-events: none;
 			content: "";
@@ -97,7 +97,7 @@
 			left: 50%;
 			transform: translateX(-50%) rotate(180deg);
 
-			width: 30px;
+			width: 19px;
 			height: 24px;
 
 			visibility: hidden;
