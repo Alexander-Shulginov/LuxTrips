@@ -1,6 +1,6 @@
 .header {
 	position: absolute;
-	z-index: 1200;
+	z-index: 120;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -23,11 +23,6 @@
 		width: 121px;
 		height: 63px;
 		outline: none;
-
-		@media (max-width: 768px){
-			width: 100px;
-			height: 60px;
-		}
 		&::after {
 			@include bg-svg("common--decor");
 
@@ -86,6 +81,11 @@
 		svg {
 			width: inherit;
 			height: inherit;
+		}
+
+		@media (max-width: 768px) {
+			width: 100px;
+			height: 60px;
 		}
 	}
 
