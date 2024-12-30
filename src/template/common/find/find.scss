@@ -187,10 +187,21 @@
 
 		background-color: $color-light;
 		border-radius: 8px;
-		outline: 1px solid $color-decor;
-		outline-offset: -1px;
 
 		transition: height 0.3s ease-in-out;
+		&::after {
+			pointer-events: none;
+			content: "";
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			border: 1px solid $color-decor;
+			border-radius: 8px;
+		}
 	}
 
 	&__item {
