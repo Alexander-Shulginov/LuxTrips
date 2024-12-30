@@ -1,15 +1,10 @@
-Header
-	z index конфликтует с hero
-
+Header +++
 Hero +++
-
-Top rated
-
+Top rated +++
 Luxury packeges +++
-Book +++
+Book +++ 
 Why +++
 Customise +++
-
 Form +++
 
 Reviews +++
@@ -20,12 +15,6 @@ Contacts +++
 
 Footer
 	- Добавить ссылку на портфолио в футере Author
-	- Call me back решить кнопка это или ссылка
-	- GSAP не работает
 	- Анимация логиотипа
 
-
-MOBILE
 Iphone
-Удалить паралакс если не буду использовать
-Проработать высоту до элементов при скроле scroll-padding-top

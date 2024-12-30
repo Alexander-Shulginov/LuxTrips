@@ -24,7 +24,7 @@ burgerMenu();
 
 //! scroll disabled
 // window.setTimeout(() => {
-// smoothScroll();
+smoothScroll();
 // }, 2000);
 
 export function typeText(index) {
