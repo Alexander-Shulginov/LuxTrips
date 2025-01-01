@@ -10,8 +10,7 @@ export default function gsapPackages() {
 		tl.from(
 			item,
 			{
-				// y: 120,
-				x: -120,
+				x: -20,
 				opacity: 0,
 				duration: 0.8,
 				delay: index * 0.4,

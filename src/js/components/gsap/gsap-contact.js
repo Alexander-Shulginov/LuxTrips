@@ -12,7 +12,7 @@ export default function gsapContact() {
 				trigger: '.contacts',
 				start: '-150%',
 			},
-			y: 120,
+			y: 20,
 			opacity: 0,
 			duration: 0.6,
 			delay: index * 0.3,

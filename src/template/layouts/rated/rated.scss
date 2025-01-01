@@ -246,9 +246,8 @@
 
 	&__location {
 		display: flex;
-		align-items: center;
 		gap: 6px;
-
+		align-items: center;
 		margin-bottom: 6px;
 	}
 
@@ -320,11 +319,9 @@
 	}
 
 	&__nav--hidden {
-		// width: 0px;
-		// height: 0px;
+		width: 0px;
 		opacity: 0;
-		transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out,
-			height 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
 	}
 }
 
@@ -382,12 +379,4 @@
 
 .swiper-slide-active .place__inner {
 	opacity: 1;
-}
-
-.swiper-slide:not(.swiper-slide-active) .place__name {
-	font-size: 22px;
-}
-
-.swiper-slide:not(.swiper-slide-active) .place__value {
-	font-size: 18px;
 }

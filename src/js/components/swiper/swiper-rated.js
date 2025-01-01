@@ -14,7 +14,7 @@ export default new Swiper('.swiper-rated', {
 		stretch: 0,
 		depth: 100,
 		modifier: 1.33,
-		slideShadows: true,
+		slideShadows: false,
 	},
 	breakpoints: {
 		320: {
