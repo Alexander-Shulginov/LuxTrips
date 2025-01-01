@@ -23,7 +23,7 @@ jobs:
 
       # Шаг 3: Устанавливаем зависимости
       - name: Install dependencies
-        run: npm ci --omit=optional
+        run: npm install
 
       # Шаг 4: Запускаем сборку проекта
       - name: Build project
