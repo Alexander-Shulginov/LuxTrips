@@ -17,7 +17,7 @@ const tabs = document.querySelectorAll('.tabs');
 tabs.forEach((tab) => new CustomTabs(tab, 1, 'horizontal'));
 
 gsapInit();
-// preloader();
+preloader();
 flyingNavSlider();
 resetSliderPosition();
 burgerMenu();

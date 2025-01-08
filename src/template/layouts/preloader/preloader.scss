@@ -16,13 +16,13 @@
 
 .preload-complite {
 	height: 0;
-	transition: height 0.8s ease-in-out;
+	transition: height 0.7s ease-in-out;
 }
 
 .preloader-icon {
 	@include position("center");
 
-	width: 30vw;
+	width: 70vw;
 	height: 30vh;
 }
 

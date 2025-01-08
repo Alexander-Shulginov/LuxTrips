@@ -39,7 +39,7 @@ section.book#book
 		.book__content
 			each item in items
 				.book__item(data-gsap-book)
-					img.book__img(src=`./img/book/${item.img}.webp` alt= item.text) 
+					img.book__img(src=`./img/book/${item.img}.webp`, alt= item.text, loading="lazy") 
 					.book__rhomb-box
 						.book__rhomb
 						p.book__text!= item.text
