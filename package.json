@@ -53,12 +53,12 @@
 		"terser-webpack-plugin": "^5.3.9",
 		"w3c-html-validator": "^1.5.1",
 		"webpack": "^5.89.0",
-		"webpack-stream": "^7.0.0"
+		"webpack-stream": "^7.0.0",
+		"caniuse-lite": "^1.0.30001690"
 	},
 	"dependencies": {
 		"@studio-freight/lenis": "^1.0.29",
 		"animejs": "^3.2.2",
-		"caniuse-lite": "^1.0.30001690",
 		"gsap": "^3.12.2",
 		"swiper": "^11.0.5",
 		"typed.js": "^2.1.0"
