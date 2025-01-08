@@ -30,7 +30,9 @@ new Swiper('.swiper-packages', {
 function resetSliderPosition() {
 	window.addEventListener('resize', () => {
 		if (window.innerWidth > 1024) {
-			document.querySelector('.packages__wrapper').removeAttribute('style');
+			document
+				.querySelector('.packages__wrapper')
+				.removeAttribute('style');
 		}
 	});
 }

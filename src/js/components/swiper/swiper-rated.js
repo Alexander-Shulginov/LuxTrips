@@ -8,14 +8,7 @@ export default new Swiper('.swiper-rated', {
 	initialSlide: 6,
 	slidesPerView: 4,
 	centeredSlides: true,
-	effect: 'coverflow',
-	coverflowEffect: {
-		rotate: 0,
-		stretch: 0,
-		depth: 100,
-		modifier: 1.33,
-		slideShadows: false,
-	},
+	loop: true,
 	breakpoints: {
 		320: {
 			slidesPerView: 1.1,
@@ -27,7 +20,7 @@ export default new Swiper('.swiper-rated', {
 			slidesPerView: 2.3,
 		},
 		1024: {
-			slidesPerView: 3,
+			slidesPerView: 2.9,
 		},
 		1250: {
 			slidesPerView: 4,
