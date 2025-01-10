@@ -37,4 +37,4 @@ function resetSliderPosition() {
 	});
 }
 
-export { Swiper, resetSliderPosition };
+// export { Swiper, resetSliderPosition };

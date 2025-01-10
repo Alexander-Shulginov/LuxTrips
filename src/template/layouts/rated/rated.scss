@@ -152,11 +152,11 @@
 		left: 0;
 
 		display: none;
+	}
 
-		&--visible {
-			display: block;
-			animation: show-card 0.7s ease-in-out 0s both;
-		}
+	&__content--visible {
+		display: block;
+		animation: show-card 0.7s ease-in-out 0s both;
 	}
 
 	@keyframes show-card {

@@ -1,8 +1,8 @@
 import Swiper from 'swiper';
-import { EffectCoverflow, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
-export default new Swiper('.swiper-rated', {
-	modules: [Navigation, EffectCoverflow],
+const swiperRated = new Swiper('.swiper-rated', {
+	modules: [Navigation],
 
 	speed: 1000,
 	initialSlide: 6,
@@ -32,3 +32,5 @@ export default new Swiper('.swiper-rated', {
 		prevEl: '.swiper-button-prev.place__nav',
 	},
 });
+
+export default swiperRated;
