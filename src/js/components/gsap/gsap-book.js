@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function gsapBook() {
 	const tl = gsap.timeline();
 	const sectionTitle = document.querySelector('.book .section-title--decor');
+	const elements = gsap.utils.toArray('[data-gsap-book]');
 
 	tl.to(sectionTitle, {
 		scrollTrigger: {
@@ -19,13 +20,10 @@ export default function gsapBook() {
 		},
 	});
 
-	const elements = gsap.utils.toArray('[data-gsap-book]');
-
 	elements.forEach((element, index) => {
 		gsap.from(element, {
 			scrollTrigger: {
 				trigger: '.book__content',
-				start: '-130%',
 			},
 			opacity: 0,
 			y: 30,

@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function gsapCustomise() {
+	const items = document.querySelectorAll('.customise__animation');
 	gsap.to('.customise__sky--left', {
 		scrollTrigger: {
 			trigger: '.customise',
@@ -33,38 +34,11 @@ export default function gsapCustomise() {
 	gsap.to('.customise', {
 		scrollTrigger: {
 			trigger: '.customise__animation',
-			start: '-860%',
-			toggleClass: 'customise__animation--start',
-		},
-	});
-	gsap.to('.customise', {
-		scrollTrigger: {
-			trigger: '.customise__animation--1',
-			toggleClass: 'customise__animation--start',
-		},
-	});
-	gsap.to('.customise', {
-		scrollTrigger: {
-			trigger: '.customise__animation--2',
-			toggleClass: 'customise__animation--start',
-		},
-	});
-	gsap.to('.customise', {
-		scrollTrigger: {
-			trigger: '.customise__animation--3',
-			toggleClass: 'customise__animation--start',
-		},
-	});
-	gsap.to('.customise', {
-		scrollTrigger: {
-			trigger: '.customise__animation--4',
-			toggleClass: 'customise__animation--start',
-		},
-	});
-	gsap.to('.customise', {
-		scrollTrigger: {
-			trigger: '.customise__animation--5',
-			toggleClass: 'customise__animation--start',
+			onEnter: () => {
+				items.forEach((item) => {
+					item.classList.add('customise__animation--start');
+				});
+			},
 		},
 	});
 }
