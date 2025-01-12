@@ -54,33 +54,5 @@
 		"price": "€ 3200",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "USA",
-		"place": "Lake Tahoe",
-		"price": "€ 2850",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "USA",
-		"place": "Hawaii Island",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "Canada",
-		"place": "Banff",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "USA",
-		"place": "Key West",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]

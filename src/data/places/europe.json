@@ -54,33 +54,5 @@
 		"price": "€ 3200",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "Italy",
-		"place": "Cinque Terre",
-		"price": "€ 2850",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "Spain",
-		"place": "Costa del Sol",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "Greece",
-		"place": "Rhodes",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "France",
-		"place": "Cannes",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]

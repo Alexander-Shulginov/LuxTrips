@@ -54,33 +54,5 @@
 		"price": "€ 3200",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "Poland",
-		"place": "Wieszowa",
-		"price": "€ 2850",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "Spain",
-		"place": "Barcelona",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "Nepal",
-		"place": "Everest",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "USA",
-		"place": "Golden bridge",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]

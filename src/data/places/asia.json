@@ -54,33 +54,5 @@
 		"price": "€ 3200",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "China",
-		"place": "Guilin",
-		"price": "€ 2850",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "Japan",
-		"place": "Osaka",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "China",
-		"place": "Chengdu",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "Japan",
-		"place": "Nara",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]

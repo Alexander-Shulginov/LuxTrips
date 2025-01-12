@@ -54,33 +54,5 @@
 		"price": "€ 3200",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "Australia",
-		"place": "Hamilton Island",
-		"price": "€ 2850",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "Australia",
-		"place": "Darwin",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "Australia",
-		"place": "Hobart",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "Australia",
-		"place": "Fraser Island",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]

@@ -54,33 +54,5 @@
 		"price": "€ 4500",
 		"rating": "5.0",
 		"img": "place-8"
-	},
-	{
-		"country": "Russia",
-		"place": "Ural",
-		"price": "€ 9990",
-		"rating": "4.0",
-		"img": "place-9"
-	},
-	{
-		"country": "Russia",
-		"place": "Golden Ring",
-		"price": "€ 5000",
-		"rating": "4.0",
-		"img": "place-10"
-	},
-	{
-		"country": "Russia",
-		"place": "Siberia",
-		"price": "€ 7700",
-		"rating": "5.0",
-		"img": "place-11"
-	},
-	{
-		"country": "Russia",
-		"place": "Yakutsk",
-		"price": "€ 2000",
-		"rating": "4.0",
-		"img": "place-12"
 	}
 ]
