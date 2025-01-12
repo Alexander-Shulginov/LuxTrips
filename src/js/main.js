@@ -12,6 +12,7 @@ import { resetSliderPosition } from './components/swiper/swiper-packages';
 import burgerMenu from './components/burgerMenu';
 import gsapInit from './components/gsap';
 import smoothScroll from './components/smoothScroll';
+import { lazyLoadBgImg } from './components/lazyLoadBgImg';
 
 const selects = document.querySelectorAll('.select');
 selects.forEach((select) => new CustomSelect(select));
@@ -23,6 +24,7 @@ preloader();
 flyingNavSlider();
 resetSliderPosition();
 burgerMenu();
+lazyLoadBgImg();
 
 //! scroll disabled
 // window.setTimeout(() => {
