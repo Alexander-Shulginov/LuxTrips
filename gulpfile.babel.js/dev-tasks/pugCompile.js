@@ -21,7 +21,6 @@ export default async function pugCompile() {
 					asia: require('../../src/data/places/asia.json'),
 					europe: require('../../src/data/places/europe.json'),
 					northAmerica: require('../../src/data/places/northAmerica.json'),
-					southAmerica: require('../../src/data/places/southAmerica.json'),
 					russia: require('../../src/data/places/russia.json'),
 					australia: require('../../src/data/places/australia.json'),
 				},

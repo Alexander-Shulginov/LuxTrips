@@ -7,7 +7,6 @@ include ../../common/title/title
 		"Africa",
 		"Europe",
 		"North America",
-		"South America",
 		"Australia",
 	]
 
@@ -156,27 +155,6 @@ section.rated
 												span.place__rating-num= item.rating
 												img(src=`./img/places/rating-${item.rating}.webp`, alt="Image place" height="100" width="11")
 
-				.tabs__content(id="tabpanel-7" role='tabpanel' aria-labelledby="tab-7")
-					.swiper.swiper-rated.rated__container 
-						.swiper-wrapper 
-							each item in southAmerica
-								.swiper-slide.place
-									+img(`places/southAmerica/${item.img}`, "place__img", 350, 570, "Place photo", "lazy")
-									.place__inner
-										.place__block
-											.place__location
-												+svg('common--place', 'place__mark', 10, 10)
-												address.place__country= item.country
-											div
-												h3.place__name= item.place
-											.place__wrap
-												.place__sum
-													span.place__price From
-													.place__value= item.price 
-										.place__block 
-											.place__rating
-												span.place__rating-num= item.rating
-												img(src=`./img/places/rating-${item.rating}.webp`, alt="Image place" height="100" width="11")
 				.tabs__content(id="tabpanel-8" role='tabpanel' aria-labelledby="tab-8")
 					.swiper.swiper-rated.rated__container 
 						.swiper-wrapper 

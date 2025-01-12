@@ -5,8 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const defaultParams = {
 	duration: 1.4,
-	// delay: 2.6,
-	delay: 0,
+	delay: 1,
 };
 
 export default function gsapHero() {
