@@ -1,13 +1,4 @@
-- var scriptPath = "./js/";
-
--
-    var scripts = {
-        gsap: "gsap.min.js",
-        swiper: "swiper.min.js",
-        vendor: "vendor.min.js",
-        main: "main.min.js",
-    }
-
-each script in scripts
-    if script
-        script(defer, src=`${scriptPath}${script}`)
+script(defer, src="./js/gsap.min.js") 
+script(defer, src="./js/main.min.js") 
+script(async, src="./js/swiper.min.js") 
+script(async, src="./js/vendor.min.js") 
