@@ -25,30 +25,41 @@ module.exports = {
 	optimization: {
 		minimizer: [
 			new TerserPlugin({
-				parallel: true, 			// parallel minify (for optimization)
-				extractComments: false, 	// disable comment
+				parallel: true, // parallel minify (for optimization)
+				extractComments: false, // disable comment
 				terserOptions: {
-					mangle: true, 			// minify var names
+					mangle: true, // minify var names
 					compress: {
 						drop_console: true, // delete console.log
 					},
 					format: {
-						comments: false, 	// disable comment
+						comments: false, // disable comment
 					},
 				},
 			}),
 		],
 		splitChunks: {
 			cacheGroups: {
-				vendor: {
+				gsap: {
+					test: /[\\/]node_modules[\\/]gsap[\\/]/,
+					name: 'gsap',
 					chunks: 'all',
-					test: /node_modules/,
+				},
+				swiper: {
+					test: /[\\/]node_modules[\\/]swiper[\\/]/,
+					name: 'swiper',
+					chunks: 'all',
+				},
+				vendors: {
+					test: /[\\/]node_modules[\\/]/,
 					name: 'vendor',
-					enforce: true,
+					chunks: 'all',
+					priority: -10,
 				},
 			},
 		},
 	},
 	devtool: process.env.NODE_ENV === 'production' ? false : 'source-map',
 	mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+	// mode: 'production',
 };

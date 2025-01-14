@@ -46,6 +46,7 @@
 		"gulp-svgmin": "^4.1.0",
 		"gulp-webp": "^4.0.1",
 		"pug-lint": "^2.7.0",
+		"repomix": "^0.2.20",
 		"sass": "^1.62.1",
 		"style-loader": "^3.3.3",
 		"stylelint": "^15.11.0",
