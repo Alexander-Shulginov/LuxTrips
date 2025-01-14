@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 
-new Swiper('.swiper-packages', {
+const swiperPackages = new Swiper('.swiper-packages', {
 	modules: [Pagination],
 	loop: true,
 	slidesPerView: 3,
 	width: 1000,
-	speed: 800,
+	speed: 1000,
 	breakpoints: {
 		320: {
 			spaceBetween: 16,
@@ -27,14 +27,14 @@ new Swiper('.swiper-packages', {
 	},
 });
 
-function resetSliderPosition() {
-	window.addEventListener('resize', () => {
-		if (window.innerWidth > 1024) {
-			document
-				.querySelector('.packages__wrapper')
-				.removeAttribute('style');
-		}
-	});
-}
+// function resetSliderPosition() {
+// 	window.addEventListener('resize', () => {
+// 		if (window.innerWidth > 1024) {
+// 			document
+// 				.querySelector('.packages__wrapper')
+// 				.removeAttribute('style');
+// 		}
+// 	});
+// }
 
-export { Swiper, resetSliderPosition };
+export default swiperPackages;

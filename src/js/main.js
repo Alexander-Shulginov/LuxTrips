@@ -6,9 +6,9 @@ import preloader from './components/preloader';
 
 import swiperRated from './components/swiper/swiper-rated';
 import swiperReviews from './components/swiper/swiper-reviews';
+import swiperPackages from './components/swiper/swiper-packages';
 
 import flyingNavSlider from './components/flyingNavSlider';
-import { resetSliderPosition } from './components/swiper/swiper-packages';
 import burgerMenu from './components/burgerMenu';
 import gsapInit from './components/gsap';
 import smoothScroll from './components/smoothScroll';
@@ -20,16 +20,12 @@ const tabs = document.querySelectorAll('.tabs');
 tabs.forEach((tab) => new CustomTabs(tab, 1, 'horizontal'));
 
 gsapInit();
-preloader();
+// preloader();
 flyingNavSlider();
-resetSliderPosition();
+// resetSliderPosition();
 burgerMenu();
 lazyLoadBgImg();
-
-//! scroll disabled
-// window.setTimeout(() => {
 smoothScroll();
-// }, 2000);
 
 export function typeText(index) {
 	const typed = new Typed(`#typed-${index}`, {
