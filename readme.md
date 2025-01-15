@@ -1,4 +1,4 @@
-## Authorization form styled in neumorphism.
+## LuxTrips is a travel service webpage
 
 #### Run Locally
 
