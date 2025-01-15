@@ -2,11 +2,10 @@
 import Typed from 'typed.js';
 import CustomTabs from './modules/tabs/tabs';
 import CustomSelect from './modules/select/select';
-import preloader from './components/preloader';
 
 import swiperRated from './components/swiper/swiper-rated';
 import swiperReviews from './components/swiper/swiper-reviews';
-import swiperPackages from './components/swiper/swiper-packages';
+import swiperPackages, { resetSliderPosition } from './components/swiper/swiper-packages';
 
 import flyingNavSlider from './components/flyingNavSlider';
 import burgerMenu from './components/burgerMenu';
@@ -20,9 +19,8 @@ const tabs = document.querySelectorAll('.tabs');
 tabs.forEach((tab) => new CustomTabs(tab, 1, 'horizontal'));
 
 gsapInit();
-// preloader();
 flyingNavSlider();
-// resetSliderPosition();
+resetSliderPosition();
 burgerMenu();
 lazyLoadBgImg();
 smoothScroll();

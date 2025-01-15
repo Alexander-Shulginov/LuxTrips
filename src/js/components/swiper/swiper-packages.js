@@ -4,13 +4,11 @@ import { Pagination } from 'swiper/modules';
 const swiperPackages = new Swiper('.swiper-packages', {
 	modules: [Pagination],
 	loop: true,
-	slidesPerView: 3,
-	width: 1000,
+	slidesPerView: 'auto',
 	speed: 1000,
 	breakpoints: {
 		320: {
 			spaceBetween: 16,
-			width: 900,
 		},
 		768: {
 			spaceBetween: 20,
@@ -27,14 +25,17 @@ const swiperPackages = new Swiper('.swiper-packages', {
 	},
 });
 
-// function resetSliderPosition() {
-// 	window.addEventListener('resize', () => {
-// 		if (window.innerWidth > 1024) {
-// 			document
-// 				.querySelector('.packages__wrapper')
-// 				.removeAttribute('style');
-// 		}
-// 	});
-// }
+export function resetSliderPosition() {
+	window.addEventListener('resize', () => {
+		if (window.innerWidth > 1024) {
+			document
+				.querySelector('.packages__wrapper')
+				.removeAttribute('style');
+			document
+				.querySelector('.packages__item')
+				.removeAttribute('style');
+		}
+	});
+}
 
 export default swiperPackages;
