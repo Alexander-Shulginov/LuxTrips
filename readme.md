@@ -1,6 +1,6 @@
 ## LuxTrips is a travel service webpage
 
-#### Run Locally
+#### Run Locally  
 
 - Clone the project
 
