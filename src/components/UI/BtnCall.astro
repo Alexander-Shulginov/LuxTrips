@@ -1,0 +1,43 @@
+<div class="button-call">
+    <a class="button-call__link" href="#subscribe-form">Call Me Back</a>
+</div>
+
+<style lang="scss">
+    .button-call {
+        background-image: url('@/assets/icons/common/border.svg');
+
+        cursor: pointer;
+
+        padding: 22px 28px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__link {
+            display: block;
+
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+
+            outline: none;
+
+            transition: transform 0.8s ease-in-out;
+
+            &:focus-visible {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                .button-call__link {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+</style>

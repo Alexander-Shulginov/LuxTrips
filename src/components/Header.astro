@@ -1,0 +1,205 @@
+---
+import Burger from '@/components/UI/Burger.astro';
+import BtnCall from '@/components/UI/BtnCall.astro';
+import MainLogo from '@/components/UI/MainLogo.astro';
+import Navigation from '@/components/UI/Navigation.astro';
+---
+
+<script>
+    import burgerMenu from '@/scripts/burgerMenu';
+    burgerMenu();
+</script>
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <MainLogo />
+        </div>
+
+        <div class="header__nav">
+            <Navigation />
+
+            <div class="header__nav-bg">
+                <svg class="header__nav-icon" width="309" height="599" viewBox="0 0 309 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M78.0067 149.98L78.0074 149.978L154.502 1.09062L231.618 149.978L231.619 149.98L308.438 299.5L154.5 597.91C138.046 566.043 123.052 537.045 108.638 509.169C73.4309 441.079 41.683 379.68 0.562504 299.501L78.0067 149.98Z" stroke="white"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="header__btn-call">
+            <BtnCall />
+        </div>
+
+        <div class="header__burger">
+            <Burger />
+        </div>
+    </div>
+</header>
+
+
+<style lang="scss">
+    .header {
+        position: absolute;
+        z-index: 120;
+        top: 0;
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        padding-top: 22px;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            max-width: 1380px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        &__logo {
+            transform: translateY(-4px);
+        }
+
+        &__nav {
+            @include tablet {
+                pointer-events: none;
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+
+                overflow: hidden;
+                display: none;
+
+                height: 100vh;
+                padding: unset;
+
+                background-color: $color-bg;
+
+                :global(.navigation) {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &__nav-bg {
+            position: absolute;
+            z-index: 10;
+            left: 50%;
+            transform: translate(-50%, -90%);
+
+            display: none;
+        }
+
+        &__btn-call {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &__burger {
+            display: none;
+
+            @include tablet {
+                position: relative;
+                z-index: 100;
+                display: block;
+            }
+        }
+
+        &--mobile {
+            @include tablet {
+                z-index: 1400 !important;
+                bottom: 0;
+
+                .header__logo {
+                    position: relative;
+                    z-index: 100;
+                }
+
+                .header__nav {
+                    pointer-events: all;
+                    display: block;
+                    animation: menu-anim 0.3s linear forwards;
+                }
+
+                .header__nav-bg {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    z-index: -1;
+
+                    display: block;
+
+                    stroke-dasharray: 1966;
+                    stroke-dashoffset: 1966;
+
+                    animation: showanim 3s linear forwards;
+                }
+
+                .header__btn-call {
+                    position: relative;
+                    z-index: 100;
+                    display: none;
+                }
+
+                :global(.navigation__list) {
+                    flex-direction: column;
+                    gap: 0;
+                    width: 100%;
+                }
+
+                :global(.navigation__item) {
+                    padding: 22px;
+                }
+            }
+        }
+    }
+
+    @media (max-height: 740px) {
+        .header--mobile {
+            .header__nav {
+                height: 100%;
+                padding-top: 60px;
+            }
+
+            .header__nav-bg {
+                width: 60%;
+                height: 60%;
+                text-align: center;
+            }
+
+            .header__nav-icon {
+                width: 100%;
+                height: 100%;
+            }
+
+            :global(.navigation__item) {
+                padding: 15px;
+            }
+        }
+    }
+
+    @keyframes showanim {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes menu-anim {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>

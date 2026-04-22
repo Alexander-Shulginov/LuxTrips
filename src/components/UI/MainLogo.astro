@@ -1,0 +1,24 @@
+---
+import Logo from '@/assets/icons/common/logo.svg';
+---
+
+<a class="main-logo" href="/" aria-label="Logo">
+    <Logo />
+</a>
+
+<style lang="scss">
+    .main-logo {
+        width: 121px;
+        height: 63px;
+
+        svg {
+            width: inherit;
+            height: inherit;
+        }
+
+        @include mobile {
+            width: 100px;
+            height: 60px;
+        }
+    }
+</style>

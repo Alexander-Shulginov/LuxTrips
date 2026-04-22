@@ -1,0 +1,125 @@
+---
+import { APP_CONFIG } from '@/config/app';
+---
+
+<nav class="navigation">
+    <ul class="navigation__list">
+        {
+            Object.entries(APP_CONFIG.navigation).map(([key, link]) => (
+                <li class="navigation__item">
+                    <a class="navigation__nav-link" href={`#${key}`}>
+                        {link}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>
+
+<style lang="scss">
+    .navigation {
+        &__list {
+            position: relative;
+            z-index: 100;
+
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+
+            @include tablet {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+        }
+
+        &__nav-link {
+            position: relative;
+
+            padding: 10px;
+
+            font-size: 16px;
+            font-weight: 400;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+
+            outline: none;
+
+            &::after {
+                background-image: url('@/assets/icons/common/decor.svg');
+                background-size: contain;
+
+                pointer-events: none;
+                content: '';
+
+                position: absolute;
+                top: -9px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                width: 19px;
+                height: 24px;
+
+                visibility: hidden;
+                opacity: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                fill: #000;
+
+                transition:
+                    visibility 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out;
+            }
+
+            &::before {
+                background-image: url('@/assets/icons/common/decor.svg');
+                background-size: contain;
+
+                pointer-events: none;
+                content: '';
+
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%) rotate(180deg);
+
+                width: 19px;
+                height: 24px;
+
+                visibility: hidden;
+                opacity: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                fill: #000;
+
+                transition:
+                    visibility 0.5s ease-in-out,
+                    opacity 0.5s ease-in-out;
+            }
+
+            &:focus-visible::before,
+            &:focus-visible::after {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            @media (any-hover: hover) {
+                &:hover::before,
+                &:hover::after,
+                &:focus-visible {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+</style>
