@@ -1,6 +1,7 @@
 ---
 import { Font } from 'astro:assets';
 import '@/styles/style.scss';
+import Header from '@/components/Header.astro';
 ---
 
 <!doctype html>
@@ -21,6 +22,7 @@ import '@/styles/style.scss';
         <Font cssVariable="--font-forum" />
     </head>
     <body>
+        <Header />
         <slot />
     </body>
 </html>

@@ -1,0 +1,40 @@
+---
+type RhombSize = 'large' | 'big' | 'medium' | 'small';
+
+interface Props {
+	size: RhombSize;
+}
+
+const { size } = Astro.props;
+---
+
+<div class={`rhomb rhomb--${size}`} aria-hidden="true"></div>
+
+<style lang="scss">
+.rhomb {
+	transform: scaleY(2) rotate(45deg);
+	background-color: rgba(232, 233, 237, 0.5);
+	backdrop-filter: blur(2px);
+	border: 1px solid #fff;
+
+	&--large {
+		width: clamp-px(40, 90);
+		height: clamp-px(40, 90);
+	}
+
+	&--big {
+		width: clamp-px(20, 40);
+		height: clamp-px(20, 40);
+	}
+
+	&--medium {
+		width: clamp-px(15, 30);
+		height: clamp-px(15, 30);
+	}
+
+	&--small {
+		width: clamp-px(10, 20);
+		height: clamp-px(10, 20);
+	}
+}
+</style>

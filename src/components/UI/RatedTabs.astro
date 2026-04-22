@@ -1,0 +1,107 @@
+---
+import RatedSlider from './RatedSlider.astro';
+import { regionTabs } from '@/data/places';
+---
+
+<div class="tabs rated__tabs" id="custom-tabs-rated">
+	<div class="tabs__nav" role="tablist" aria-labelledby="custom-tabs-rated">
+		{regionTabs.map((tab, index) => (
+			<button
+				class:list={['tabs__btn', { 'tabs__btn--active': index === 0 }]}
+				type="button"
+				id={`tab-${index + 1}`}
+				role="tab"
+				aria-selected={index === 0 ? 'true' : 'false'}
+				aria-controls={`tabpanel-${index + 1}`}
+			>
+				{tab.label}
+			</button>
+		))}
+	</div>
+	<div class="tabs__wrapper" aria-hidden="true">
+		{regionTabs.map((tab, index) => (
+			<RatedSlider tab={tab} index={index} />
+		))}
+	</div>
+</div>
+
+<style lang="scss">
+.tabs {
+	&__nav {
+		display: flex;
+		gap: 37px;
+		justify-content: center;
+
+		margin: 0 12px 18px 12px;
+		padding: 0 15px;
+		padding-bottom: 23px;
+
+		&::-webkit-scrollbar {
+			height: 6px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: $color-light;
+			border-radius: 8px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: $color-decor;
+			border-radius: 8px;
+		}
+
+		@media (max-width: 785px) {
+			overflow-x: auto;
+			justify-content: unset;
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+
+		flex-shrink: 0;
+
+		font-size: 24px;
+		line-height: 1;
+		color: $color-decor;
+
+		background-color: transparent;
+
+		transition: color 0.2s ease-in-out;
+
+		&--active {
+			position: relative;
+			z-index: 22;
+			color: $color-dark;
+			outline: none;
+
+			&::before {
+				content: '';
+
+				position: absolute;
+				bottom: -23px;
+				left: 50%;
+				transform: translateX(-50%);
+
+				width: 18px;
+				height: 24px;
+
+				background-image: var(--rhomb-hover);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $color-dark;
+			}
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+		overflow: hidden;
+		max-width: 100%;
+		height: clamp-px(520, 570);
+	}
+}
+</style>

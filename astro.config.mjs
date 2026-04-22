@@ -55,7 +55,7 @@ export default defineConfig({
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: `@use "${resolve(__dirname, 'src/styles/vars.scss')}" as *; @use "${resolve(__dirname, 'src/styles/mixins/breakpoints.scss')}" as *;`,
+                    additionalData: `@use "${resolve(__dirname, 'src/styles/vars.scss')}" as *; @use "${resolve(__dirname, 'src/styles/mixins/breakpoints.scss')}" as *; @use "${resolve(__dirname, 'src/styles/functions/adaptive-fz.scss')}" as *;`,
                 },
             },
         },

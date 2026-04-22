@@ -1,0 +1,257 @@
+---
+import { Image } from 'astro:assets';
+import Rhomb from './UI/Rhomb.astro';
+import heroBg1 from '@/assets/images/hero/bg-1.webp?url';
+import heroBg2 from '@/assets/images/hero/bg-2.webp';
+import heroBg3 from '@/assets/images/hero/bg-3.webp';
+import heroBg4 from '@/assets/images/hero/bg-4.webp?url';
+import heroScaleBg1 from '@/assets/images/hero/scale-bg-1.webp?url';
+import heroScaleBg2 from '@/assets/images/hero/scale-bg-2.webp';
+import heroScaleBg3 from '@/assets/images/hero/scale-bg-3.webp';
+---
+
+<script>
+    import gsapHero from '@/scripts/gsap/gsap-hero';
+    const heroEl = document.querySelector('.hero');
+    if (heroEl) gsapHero(heroEl);
+</script>
+
+<section class="hero" style={`--hero-bg: url(${heroBg1}); --hero-before-bg: url(${heroBg4}); --hero-scale-bg: url(${heroScaleBg1});`}>
+    <div class="hero__wrapper">
+        <span class="hero__text">the world's most</span>
+        <h1 class="hero__title">extra ordinary</h1>
+        <div class="hero__subtitle">
+            places
+            <div class="hero__rhomb hero__rhomb--large">
+                <Rhomb size="large" />
+            </div>
+        </div>
+        <div class="hero__rhomb hero__rhomb--small-1">
+            <Rhomb size="small" />
+        </div>
+        <div class="hero__rhomb hero__rhomb--big">
+            <Rhomb size="big" />
+        </div>
+        <div class="hero__rhomb hero__rhomb--medium">
+            <Rhomb size="medium" />
+        </div>
+        <div class="hero__rhomb hero__rhomb--small">
+            <Rhomb size="small" />
+        </div>
+    </div>
+    <picture>
+        <source media="(min-width: 1440px)" srcset={heroScaleBg2.src} />
+        <Image class="hero__img-1" src={heroBg2} alt="Hero background image" loading="eager" fetchpriority="high" />
+    </picture>
+    <picture>
+        <source media="(min-width: 1440px)" srcset={heroScaleBg3.src} />
+        <Image class="hero__img-2" src={heroBg3} alt="Hero background image" loading="eager" fetchpriority="high"/>
+    </picture>
+</section>
+
+<style lang="scss">
+    .hero {
+        position: relative;
+
+        overflow: hidden;
+
+        padding-top: 130px;
+        padding-bottom: 60px;
+
+        background-image: var(--hero-bg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            z-index: 500;
+            bottom: -190px;
+            left: 0;
+
+            width: 100%;
+            height: 371px;
+
+            background-image: var(--hero-before-bg);
+            background-repeat: no-repeat;
+            background-position: 0% 115%;
+            background-size: 100% 351px;
+        }
+
+        &__text {
+            position: relative;
+
+            display: block;
+
+            width: 140px;
+            margin: 0 auto;
+            margin-bottom: 66px;
+
+            font-size: clamp-px(17, 25);
+            font-weight: 400;
+            line-height: 98.5%;
+            color: #0c0b10;
+            text-transform: uppercase;
+            letter-spacing: 7.5px;
+        }
+
+        &__wrapper {
+            position: relative;
+
+            max-width: 1440px;
+            margin: 0 auto;
+            margin-bottom: 190px;
+
+            color: $color-hero-title;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            position: relative;
+
+            font-size: clamp-px(54, 198, 320, 1000);
+            font-weight: 400;
+            line-height: 0.65;
+            letter-spacing: 7.918px;
+        }
+
+        &__subtitle {
+            position: relative;
+            z-index: 140;
+
+            font-size: clamp-px(48, 140, 370, 1000);
+            line-height: $line-height-base;
+            letter-spacing: 5.665px;
+        }
+
+        &__img-1 {
+            position: absolute;
+            top: 52%;
+            width: 100%;
+        }
+
+        &__img-2 {
+            position: absolute;
+            z-index: 220;
+            top: 69%;
+            width: 100%;
+        }
+
+        &__rhomb--large {
+            position: absolute;
+            z-index: -1;
+            top: -32.8px;
+            left: 49.8%;
+            transform: translateX(-50%);
+
+            :global(.rhomb--large) {
+                width: 90px;
+                height: 90px;
+
+                @media (max-width: 1024px) {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @media (max-width: 768px) {
+                    width: clamp-px(30, 60, 320, 768);
+                    height: clamp-px(30, 60, 320, 768);
+                }
+            }
+        }
+
+        &__rhomb--big {
+            position: absolute;
+            z-index: 240;
+            top: 86%;
+            right: 15%;
+
+            @media (max-width: 768px) {
+                top: 115%;
+            }
+        }
+
+        &__rhomb--medium {
+            position: absolute;
+            z-index: 200;
+            top: 85%;
+            left: 5%;
+
+            @media (max-width: 768px) {
+                top: 107%;
+            }
+        }
+
+        &__rhomb--small-1 {
+            position: absolute;
+            z-index: 200;
+            top: 32%;
+            left: 86%;
+
+            @media (max-width: 768px) {
+                top: 28%;
+            }
+        }
+
+        &__rhomb--small {
+            position: absolute;
+            z-index: 200;
+            top: 36%;
+            left: 12%;
+
+            @media (max-width: 768px) {
+                top: 21%;
+            }
+        }
+    }
+
+    @media (min-width: 1980px) {
+        .hero {
+            background-image: var(--hero-scale-bg);
+
+            &__wrapper {
+                margin-bottom: 270px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero {
+            padding-top: 100px;
+            padding-bottom: 0;
+
+            &::before {
+                bottom: -240px;
+            }
+
+            &__wrapper {
+                margin-bottom: 175px;
+            }
+
+            &__img-1 {
+                top: 56%;
+            }
+
+            &__img-2 {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            &__img-1 {
+                overflow: hidden;
+                height: clamp-px(300, 400, 375, 768);
+                object-fit: cover;
+            }
+
+            &__rhomb--large {
+                top: -10px;
+            }
+        }
+    }
+</style>
