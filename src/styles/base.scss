@@ -1,4 +1,7 @@
 @use './vars' as *;
+@import 'swiper/swiper.css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 html {
 	// scroll-behavior: smooth;
@@ -43,4 +46,70 @@ img {
 
 .body--hidden {
 	overflow: hidden;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	top: 105%;
+	right: unset;
+	bottom: unset;
+	left: 0;
+
+	display: none;
+
+	margin-top: 12px;
+}
+
+.swiper-pagination-bullet {
+	width: clamp-px(16, 38);
+	height: 2px;
+
+	opacity: 1;
+	background: $color-light;
+	border-radius: unset;
+}
+
+.swiper-pagination-bullet-active {
+	background: $color-decor;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+	pointer-events: unset;
+	cursor: none;
+	opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	&::after {
+		content: none;
+	}
+
+	svg {
+		width: unset;
+		height: unset;
+	}
+}
+
+@media (max-width: 1024px) {
+	.swiper-button-prev.swiper-button-disabled,
+	.swiper-button-next.swiper-button-disabled {
+		cursor: pointer;
+	}
+
+	.swiper-pagination-fraction,
+	.swiper-pagination-custom,
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal {
+		position: relative;
+		z-index: 150;
+		top: 102%;
+
+		display: block;
+
+		text-align: center;
+	}
 }

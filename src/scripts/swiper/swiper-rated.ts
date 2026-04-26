@@ -7,7 +7,7 @@ function createSwiperConfig(el: HTMLElement): SwiperOptions {
 	return {
 		effect: 'panorama',
 		modules: [Navigation, Pagination, EffectPanorama],
-		slidesPerView: 1.2,
+		slidesPerView: 1,
 		centeredSlides: true,
 		loop: true,
 		spaceBetween: 0,
@@ -21,9 +21,9 @@ function createSwiperConfig(el: HTMLElement): SwiperOptions {
 			clickable: true,
 		},
 		breakpoints: {
-			640: { slidesPerView: 1 },
+			500: { slidesPerView: 2 },
 			1024: { slidesPerView: 2.5 },
-			1440: { slidesPerView: 2.85},
+			1440: { slidesPerView: 3},
 		},
 	};
 }
@@ -38,7 +38,7 @@ export default function swiperRated(container: Element) {
 		if (initialized.has(index)) return;
 
 		const panel = panels[index];
-		const el = panel?.querySelector<HTMLElement>('.rated__container');
+		const el = panel?.querySelector<HTMLElement>('.rated-slider');
 
 		if (!el) return;
 

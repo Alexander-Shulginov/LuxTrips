@@ -1,94 +1,90 @@
 ---
 import Title from './UI/Title.astro';
 import RatedTabs from './UI/RatedTabs.astro';
-import rhombHoverUrl from '@/assets/icons/common/rhomb-hover.svg?url';
 ---
 
-<section class="rated" style={`--rhomb-hover: url(${rhombHoverUrl})`}>
-	<div class="rated__title">
-		<Title decor>Top Rated Experiences</Title>
-	</div>
-	<div class="rated__wrap">
-		<RatedTabs />
-	</div>
+<section class="rated">
+    <div class="rated__title">
+        <Title decor>Top Rated Experiences</Title>
+    </div>
+    <div class="rated__wrap">
+        <RatedTabs />
+    </div>
 </section>
 
 <script>
-	import swiperRated from '@/scripts/swiper/swiper-rated';
-	const ratedEl = document.querySelector('.rated');
-	if (ratedEl) swiperRated(ratedEl);
+    import gsapRated from '@/scripts/gsap/gsap-rated';
+    import swiperRated from '@/scripts/swiper/swiper-rated';
+    const ratedEl = document.querySelector('.rated');
+    if (ratedEl) swiperRated(ratedEl);
+    gsapRated();
 </script>
 
 <style lang="scss">
-.rated {
-	position: relative;
-	z-index: 1000;
+    .rated {
+        position: relative;
+        z-index: 1000;
 
-	margin-top: -115px;
-	padding-top: 158px;
-	padding-bottom: 150px;
+        margin-top: -115px;
+        padding-top: 158px;
+        padding-bottom: 150px;
 
-	background-color: $color-bg;
+        background-color: $color-bg;
 
-	&::after {
-		content: '';
+        &::after {
+            content: '';
 
-		position: absolute;
-		top: -5%;
-		right: 0;
-		bottom: 0;
-		left: 0;
+            position: absolute;
+            top: -5%;
+            right: 0;
+            bottom: 0;
+            left: 0;
 
-		width: 100%;
-		height: 60px;
+            width: 100%;
+            height: 60px;
 
-		background: linear-gradient(
-			180deg,
-			rgba(226, 211, 206, 0) 0%,
-			rgba(226, 211, 206, 0.5) 50%,
-			rgb(226, 211, 206) 100%
-		);
-	}
+            background: linear-gradient(180deg, rgba(226, 211, 206, 0) 0%, rgba(226, 211, 206, 0.5) 50%, rgb(226, 211, 206) 100%);
+        }
 
-	&__title {
-		width: 300px;
-		margin: 0 auto;
-		margin-bottom: 80px;
-		text-align: center;
+        &__title {
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            text-align: center;
 
-		@media (max-width: 768px) {
-			margin-bottom: 95px;
-		}
-	}
+            @media (max-width: 768px) {
+                margin-bottom: 95px;
+            }
+        }
 
-	&__tabs {
-		margin-bottom: 20px;
-	}
+        &__tabs {
+            margin-bottom: 20px;
+        }
 
-	&__wrap {
-		position: relative;
-		max-width: 1440px;
-		margin: 0 auto;
-	}
+        &__wrap {
+            position: relative;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
 
-	@media (max-width: 1024px) {
-		margin-top: -200px;
-		padding-top: 310px;
-		padding-bottom: 15px;
+        @media (max-width: 1024px) {
+            margin-top: -200px;
+            padding-top: 310px;
+            padding-bottom: 15px;
 
-		&::after {
-			top: -10%;
-		}
-	}
+            &::after {
+                top: -10%;
+            }
+        }
 
-	@media (max-width: 580px) {
-		&::after {
-			top: -15%;
-		}
-	}
+        @media (max-width: 580px) {
+            &::after {
+                top: -15%;
+            }
+        }
 
-	@media (max-width: 475px) {
-		padding-bottom: 25px;
-	}
-}
+        @media (max-width: 475px) {
+            padding-bottom: 25px;
+        }
+    }
 </style>
